@@ -1,0 +1,1431 @@
+/*****************************************
+Table Of Contents:
+
+01. General Styles
+02. Preloader
+03. Navigation
+04. Header
+05. Music Theraypy
+06. Description
+07. Atendimentos
+08. Activities
+09. Indicate
+10. Benefits
+11. About
+12. Contact
+13. Footer
+14. Copyright
+15. Back To Top Button
+16. Media Queries
+******************************************/
+
+/* Colors */
+/* 
+Light-purple: #7c74c5;
+Dark-purple: #1a1447;
+Light-red: #dc858a;
+Green: #28af72;
+Gray: #787976;
+Light-gray: #bbbbbb;
+Yellow: #e9ba6c;
+Headings-font: "Kaushan Script", cursive;
+Text-font: "Open Sans", sans-serif; 
+*/
+
+/******************************/
+/*     01. General Styles     */
+/******************************/
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body,
+p {
+	color: #787976;
+	font: 500 1.08rem/1.5625rem "Open Sans", sans-serif;
+}
+
+.p-large {
+	font: 500 1.125rem/1.625rem "Open Sans", sans-serif;
+}
+
+.p-small {
+	font: 500 0.875rem/1.375rem "Open Sans", sans-serif;
+}
+
+.p-heading {
+	margin-bottom: 3.5rem;
+	text-align: center;
+	font-weight: 600;
+}
+
+.li-space-lg li {
+	margin-bottom: 0.375rem;
+}
+
+.indent {
+	padding-left: 1.25rem;
+}
+
+h1 {
+	color: #484a46;
+	font: 700 2.5rem/3rem "Kaushan Script", cursive;
+	text-align: center;
+}
+
+h2 {
+	color: #484a46;
+	font: 700 1.75rem/2.125rem "Kaushan Script", cursive;
+}
+
+h3 {
+	color: #484a46;
+	font: 700 1.375rem/1.75rem "Kaushan Script", cursive;
+}
+
+h4 {
+	color: #484a46;
+	font: 700 1.25rem/1.625rem "Kaushan Script", cursive;
+}
+
+h5 {
+	color: #484a46;
+	font: 700 1.125rem/1.5rem "Kaushan Script", cursive;
+}
+
+h6 {
+	color: #484a46;
+	font: 700 0.875rem/1.375rem "Kaushan Script", cursive;
+	text-align: center;
+}
+
+hr {
+	width: 59%;
+}
+
+a {
+	color: #787976;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #787976;
+	text-decoration: underline;
+}
+
+a.green {
+	color: #28af72;
+}
+
+a.white,
+.white {
+	color: #bbbbbb;
+}
+
+strong {
+	color: #484a46;
+}
+
+.section-title {
+	color: #28af72;
+	font: 500 1.5rem/1.5rem "Kaushan Script", cursive;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.btn-solid-reg {
+	display: inline-block;
+	padding: 1.1875rem 1.875rem 1.1875rem 1.875rem;
+	border: 0.125rem solid #28af72;
+	border-radius: 0.25rem;
+	background-color: #28af72;
+	color: #fff;
+	font: 700 0.75rem/0 "Kaushan Script", cursive;
+
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+	background-color: transparent;
+	color: #28af72;
+	text-decoration: none;
+}
+
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.375rem 2.125rem 1.375rem 2.125rem;
+	border: 0.125rem solid #28af72;
+	border-radius: 0.25rem;
+	background-color: #28af72;
+	color: #fff;
+	font: 700 0.75rem/0 "Kaushan Script", cursive;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+	background-color: transparent;
+	color: #28af72;
+	text-decoration: none;
+}
+
+.btn-outline-reg {
+	display: inline-block;
+	padding: 1.1875rem 1.875rem 1.1875rem 1.875rem;
+	border: 0.125rem solid #787976;
+	border-radius: 0.25rem;
+	background-color: transparent;
+	color: #787976;
+	font: 700 0.75rem/0 "Kaushan Script", cursive;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-reg:hover {
+	background-color: #787976;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn-outline-lg {
+	display: inline-block;
+	padding: 1.375rem 2.125rem 1.375rem 2.125rem;
+	border: 0.125rem solid #787976;
+	border-radius: 0.25rem;
+	background-color: transparent;
+	color: #787976;
+	font: 700 0.75rem/0 "Kaushan Script", cursive;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-lg:hover {
+	background-color: #787976;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn-outline-sm {
+	display: inline-block;
+	padding: 1rem 1.625rem 0.9375rem 1.625rem;
+	border: 0.125rem solid #787976;
+	border-radius: 0.25rem;
+	background-color: transparent;
+	color: #787976;
+	font: 700 0.75rem/0 "Kaushan Script", cursive;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-sm:hover {
+	background-color: #787976;
+	color: #fff;
+	text-decoration: none;
+}
+
+/*************************/
+/*     02. Preloader     */
+/*************************/
+.spinner-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #1a1447;
+}
+
+.spinner-wrapper img {
+	margin-bottom: 2rem;
+	height: 10rem;
+}
+.spinner {
+	margin-bottom: 20vh;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #fff;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%,
+	80%,
+	100% {
+		-webkit-transform: scale(0);
+	}
+	40% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes sk-bouncedelay {
+	0%,
+	80%,
+	100% {
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	}
+	40% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+/**************************/
+/*     03. Navigation     */
+/**************************/
+.navbar-custom {
+	padding-top: 0.375rem;
+	padding-bottom: 0.375rem;
+	background-color: #1a1447;
+	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+	font: 600 0.875rem/0.875rem "Kaushan Script", cursive;
+	transition: all 0.2s;
+}
+
+.navbar-custom .navbar-brand {
+	font-size: 0;
+}
+
+.navbar-custom .navbar-brand.logo-image img {
+	width: 4rem;
+	height: 4rem;
+	-webkit-backface-visibility: hidden;
+}
+
+.navbar-custom .navbar-brand.logo-text {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	font: 700 2.25rem/1.5rem "Kaushan Script", cursive;
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-custom .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.navbar-custom .nav-item .nav-link {
+	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .nav-item .nav-link.active {
+	color: #28af72;
+}
+
+.navbar-custom .social-icons {
+	display: none;
+}
+
+.navbar-custom .navbar-toggler {
+	border: none;
+	color: #fff;
+	font-size: 2rem;
+}
+
+.navbar-custom button[aria-expanded="false"] .navbar-toggler-awesome.fas.fa-times {
+	display: none;
+}
+
+.navbar-custom button[aria-expanded="false"] .navbar-toggler-awesome.fas.fa-bars {
+	display: inline-block;
+}
+
+.navbar-custom button[aria-expanded="true"] .navbar-toggler-awesome.fas.fa-bars {
+	display: none;
+}
+
+.navbar-custom button[aria-expanded="true"] .navbar-toggler-awesome.fas.fa-times {
+	display: inline-block;
+	margin-right: 0.125rem;
+}
+
+.myMenu {
+	justify-content: space-around;
+}
+
+/*********************/
+/*    04. Header     */
+/*********************/
+.header {
+	background-image: url("../images/flauta-transparent.png"), url("../images/pandeiro-transparent.png"),
+		url("../images/notas-transparent.png"), url("../images/violao-transparent.png");
+	background-position: left top, right top, left bottom, right bottom;
+	background-size: 28%;
+	background-repeat: no-repeat;
+	/* background-image: url("../images/header-bg3x.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat; */
+	margin-top: 5.3rem;
+	/* display: flex;
+	flex-direction: column; */
+}
+
+.header .header-content {
+	/* padding-top: 8rem;
+	padding-bottom: 2.125rem; */
+	text-align: center;
+	height: calc(91vh - 5.3rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .header .text-container {
+	margin-bottom: 3rem;
+} */
+
+.header h1 {
+	margin-bottom: 0.5rem;
+	color: #7c74c5;
+	font-size: 1.5rem;
+	line-height: 2.25rem;
+	height: 4.5rem;
+}
+
+.header .p-large {
+	margin-bottom: 2rem;
+	color: #dc858a;
+}
+
+.header .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+
+/*********************/
+/*     05. Music Theraypy     */
+/*********************/
+.basic-1 {
+	padding-top: 6.5rem;
+	padding-bottom: 3rem;
+}
+
+.basic-1 .text-container {
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.basic-1 h3 {
+	margin-bottom: 1.375rem;
+	font: 700 1.25rem/1.75rem "Kaushan Script", cursive;
+}
+
+/* Hover Animation */
+/* .basic-1 .image-container {
+	overflow: hidden;
+	border-radius: 0.25rem;
+}
+
+.basic-1 .image-container img {
+	margin: 0;
+	border-radius: 0.25rem;
+	transition: all 0.3s;
+}
+
+.basic-1 .image-container:hover img {
+	-moz-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+} */
+/* end of hover animation */
+
+/***************************/
+/*     06. Description     */
+/***************************/
+.cards-1 {
+	padding-top: 3rem;
+	padding-bottom: 2.875rem;
+}
+.cards-1 h3 {
+	margin-bottom: 3.25rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+.cards-1 .card {
+	margin-bottom: 2.5rem;
+	border: none;
+	text-align: center;
+}
+
+.cards-1 .fa-stack {
+	width: 6rem;
+	height: 6rem;
+	margin-right: auto;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	line-height: 6rem;
+	text-align: left;
+}
+
+.cards-1 .fa-stack .hexagon {
+	position: absolute;
+	width: 6rem;
+	height: 6rem;
+	background: url("../images/hexagon-green.svg") center center no-repeat;
+	background-size: 6rem 6rem;
+}
+
+.cards-1 .fa-stack-1x {
+	color: #fff;
+	font-size: 2rem;
+}
+
+.cards-1 .card-body {
+	padding: 0;
+}
+
+.cards-1 .card-title {
+	margin-bottom: 0.625rem;
+}
+
+/************************/
+/*     07. Atendimentos     */
+/************************/
+.attendance {
+	padding-top: 6.625rem;
+	padding-bottom: 6.625rem;
+	background-color: #ffffff;
+}
+
+.attendance h2 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.attendance h3 {
+	margin-bottom: 1.75rem;
+	text-align: center;
+}
+
+/*************************/
+/*     08. Activities     */
+/*************************/
+.activities .area-1 {
+	height: 27rem;
+	background: url("../images/maeve1.jpg") no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+
+.activities .activities-container {
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 5.375rem;
+	padding-bottom: 1.5rem;
+	text-align: center;
+}
+
+.activities h2 {
+	margin-bottom: 1.625rem;
+}
+
+.activities .item {
+	margin-bottom: 2rem;
+}
+
+.activities h4 {
+	margin-bottom: 0;
+}
+
+/*************************/
+/*     09. Indicate     */
+/*************************/
+.indicate .indicate-container {
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 2rem;
+	padding-bottom: 5.75rem;
+	text-align: center;
+}
+
+.indicate .area-2 {
+	height: 27rem;
+	background: url("../images/maeve2.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+.indicate .list-unstyled {
+	margin-bottom: 1.5rem;
+}
+
+.indicate .list-unstyled .fas {
+	color: #28af72;
+	font-size: 0.5rem;
+	line-height: 1.375rem;
+	margin-right: 0.44rem;
+	vertical-align: middle;
+}
+
+.indicate .list-unstyled .media-body {
+	margin-left: 0.625rem;
+}
+
+/********************/
+/*     10. Benefits     */
+/********************/
+
+.benefits {
+	padding-top: 6.375rem;
+	padding-bottom: 6.375rem;
+}
+.benefits .fas {
+	color: #28af72;
+	font-size: 0.5rem;
+	line-height: 1.375rem;
+	margin-right: 0.44rem;
+	vertical-align: middle;
+}
+
+.slider .slider-container {
+	position: relative;
+}
+
+.slider .swiper-container {
+	position: static;
+	width: 90%;
+	text-align: center;
+}
+.slider .swiper-slide {
+	display: flex;
+	justify-content: center;
+	height: auto;
+}
+
+.slider .swiper-button-prev:focus,
+.slider .swiper-button-next:focus {
+	outline: none;
+}
+
+.slider .swiper-button-prev {
+	left: -0.5rem;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23787976'%2F%3E%3C%2Fsvg%3E");
+	background-size: 1.125rem 1.75rem;
+}
+
+.slider .swiper-button-next {
+	right: -0.5rem;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23787976'%2F%3E%3C%2Fsvg%3E");
+	background-size: 1.125rem 1.75rem;
+}
+
+.slider .card {
+	position: relative;
+	border: solid 1px #7c74c5;
+	box-shadow: 2px 2px 3px #888888;
+	background-color: transparent;
+	margin-bottom: 0.313rem;
+	max-width: 90%;
+}
+
+.slider .card .card-body {
+	padding: 0.625rem 1.25rem;
+}
+.slider .card .card-body p {
+	margin-bottom: 0;
+}
+
+/*********************/
+/*     11. About     */
+/*********************/
+.aboutme {
+	padding-top: 6.875rem;
+	padding-bottom: 5.25rem;
+}
+
+.aboutme .image-container {
+	margin-bottom: 3rem;
+	border-radius: 0.25rem;
+}
+
+.aboutme .text-container {
+	text-align: center;
+}
+
+.aboutme h2 {
+	margin-bottom: 1.375rem;
+}
+
+.aboutme .list-unstyled {
+	margin-bottom: 1.5rem;
+}
+
+.aboutme .list-unstyled .fas {
+	color: #28af72;
+	font-size: 0.5rem;
+	line-height: 1.375rem;
+	margin-right: 0.44rem;
+	vertical-align: middle;
+}
+.aboutme .list-unstyled img {
+	margin-left: 7px;
+	vertical-align: middle;
+	line-height: 1.375rem;
+}
+.aboutme .list-unstyled .media-body {
+	margin-left: 0.625rem;
+}
+
+.aboutme #aboutme {
+	text-align: center;
+}
+
+/* Hover Animation */
+/* .aboutme .image-container {
+	overflow: hidden;
+	border-radius: 0.25rem;
+}
+
+.aboutme .image-container img {
+	margin: 0;
+	border-radius: 0.25rem;
+	transition: all 0.3s;
+}
+
+.aboutme .image-container:hover img {
+	-moz-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+} */
+/* end of hover animation */
+
+/***********************/
+/*     12. Contact     */
+/***********************/
+.contact {
+	padding-top: 6.625rem;
+	padding-bottom: 5.625rem;
+	background-color: #ffffff;
+}
+
+.contact .text-container {
+	text-align: center;
+}
+
+.contact .section-title {
+	margin-bottom: 0.5rem;
+}
+
+.contact h2 {
+	margin-bottom: 1.375rem;
+}
+
+.contact .list-unstyled {
+	margin-bottom: 2.25rem;
+	font-size: 1rem;
+	line-height: 1.625rem;
+}
+
+.contact .list-unstyled .fas,
+.contact .list-unstyled .fab {
+	margin-right: 0.44rem;
+	font-size: 0.875rem;
+	color: #28af72;
+}
+
+.contact .list-unstyled .fa-phone {
+	vertical-align: 3%;
+}
+
+.contact li {
+	font-weight: bolder;
+	display: block;
+}
+
+.contact h3 {
+	margin-bottom: 1rem;
+	margin-top: 1.5rem;
+}
+
+.contact .fa-stack {
+	margin-right: 0.25rem;
+	margin-bottom: 0.75rem;
+	margin-left: 0.125rem;
+	width: 3.25rem;
+	height: 3.25rem;
+}
+
+.contact .fa-stack .hexagon {
+	position: absolute;
+	width: 3.25rem;
+	height: 3.25rem;
+	background: url("../images/hexagon-green.svg") center center no-repeat;
+	background-size: 3.25rem 3.25rem;
+	transition: all 0.2s ease;
+}
+
+.contact .fa-stack:hover .hexagon {
+	background: url("../images/hexagon-white.svg") center center no-repeat;
+	background-size: 3.25rem 3.25rem;
+}
+
+.contact .fa-stack-1x {
+	font-size: 1.5rem;
+	line-height: 3.25rem;
+	color: #fff;
+	transition: all 0.2s ease;
+}
+
+.contact .fa-stack:hover .fa-stack-1x {
+	color: #28af72;
+}
+
+.flex-social {
+	display: flex;
+	justify-content: center;
+	text-align: left;
+	column-gap: 4rem;
+}
+
+.flex-thought {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5rem;
+	flex-wrap: wrap;
+}
+
+.flex-thought .image-container {
+	flex: 0 0 16rem;
+	border: 0;
+	margin-bottom: 1rem;
+	margin-top: -3rem;
+	text-align: center;
+}
+
+.flex-thought .image-container img {
+	border-radius: 50%;
+	box-shadow: inset 0 0 1.5em #7c74c5, 0 0 0.2em #1a1447;
+}
+
+.flex-thought .text-container {
+	flex: 0 0 20rem;
+}
+
+.flex-thought .text-container p {
+	font-style: italic;
+}
+
+.whats-btn {
+	position: absolute;
+	animation: pulse 1s infinite;
+	animation-timing-function: linear;
+	margin-left: 8px;
+}
+
+.whats-btn:hover {
+	transform: scale(1.1);
+	transition: all ease 500ms;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/**********************/
+/*     13. Footer     */
+/**********************/
+.footer {
+	padding-top: 1rem;
+	background-color: #1a1447;
+}
+
+.logo-image-footer {
+	height: 8rem;
+	display: block;
+	margin: 0 auto 1rem;
+}
+
+.footer h4 {
+	margin-bottom: 0.75rem;
+	color: #fff;
+	text-align: center;
+}
+
+.footer p,
+.footer ul {
+	font-size: 0.875rem;
+	line-height: 1.375rem;
+}
+
+.footer li {
+	min-width: min-content;
+	max-width: 100vw;
+	text-align: center;
+}
+
+.footer-flex {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+/*************************/
+/*     14. Copyright     */
+/*************************/
+.copyright {
+	padding-bottom: 0.5rem;
+	background-color: #1a1447;
+	text-align: center;
+}
+
+.copyright p,
+.copyright a {
+	color: #bbbbbb;
+	text-decoration: none;
+}
+
+/**********************************/
+/*     15. Back To Top Button     */
+/**********************************/
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 0.75rem;
+	bottom: 0.75rem;
+	display: none;
+	width: 2.625rem;
+	height: 2.625rem;
+	border-radius: 1.875rem;
+	background: #28af72 url("../images/up-arrow.png") no-repeat center 47%;
+	background-size: 1.125rem 1.125rem;
+	text-indent: -9999px;
+}
+
+a:hover.back-to-top {
+	background: transparent url("../images/up-arrow-green.png") no-repeat center 47%;
+	border: 0.125rem solid #28af72;
+}
+
+/*****************************/
+/*     16. Media Queries     */
+/*****************************/
+
+/* Min-width width 424px */
+@media (min-width: 424px) {
+	/* General Styles */
+	.header h1 {
+		font: 700 2rem/2.5rem "Kaushan Script", cursive;
+	}
+	/* end of general styles */
+}
+
+/* Min-width width 576px */
+@media (min-width: 576px) {
+	/* Benefits */
+	.benefits .card-deck {
+		flex-wrap: wrap;
+		align-items: stretch;
+	}
+	/* end of benefits */
+}
+
+/* Min-width width 768px */
+@media (min-width: 768px) {
+	/* General Styles */
+	.p-heading {
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/* end of general styles */
+
+	/* Navigation */
+	.navbar-custom {
+		/* padding: 1.125rem 1.5rem 1.125rem 2rem; */
+		box-shadow: none;
+		background: transparent;
+		justify-content: center;
+		padding-right: 18rem;
+		padding-left: 21rem;
+	}
+
+	.navbar-custom.top-nav-collapse {
+		padding-right: 18rem;
+		padding-left: 21rem;
+		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+		background-color: #1a1447;
+	}
+	.navbar-custom .navbar-brand.logo-image img {
+		margin-left: -2.5rem;
+	}
+
+	.navbar-custom .social-icons {
+		display: flex;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+	.navbar-custom .fa-stack {
+		margin-left: 0.375rem;
+		font-size: 0.8125rem;
+	}
+
+	.navbar-custom .fa-stack .hexagon {
+		width: 1.625rem;
+		height: 1.625rem;
+		position: absolute;
+		background: url("../images/hexagon-green.svg") center center no-repeat;
+		background-size: 1.625rem 1.625rem;
+		transition: all 0.2s ease;
+	}
+
+	.navbar-custom .fa-stack:hover .hexagon {
+		background: url("../images/hexagon-white.svg") center center no-repeat;
+		background-size: 1.625rem 1.625rem;
+	}
+
+	.navbar-custom .fa-stack-1x {
+		font-size: 0.6875rem;
+		line-height: 1.625rem;
+		color: #fff;
+		transition: all 0.2s ease;
+	}
+
+	.navbar-custom .fa-stack:hover .fa-stack-1x {
+		color: #28af72;
+	}
+
+	.navbar-custom .navbar-brand.logo-text {
+		color: #fff;
+	}
+
+	.navbar-custom .navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navbar-custom .nav-item .nav-link {
+		padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+		color: #7c74c5;
+	}
+
+	.navbar-custom .nav-item .nav-link:hover,
+	.navbar-custom .nav-item .nav-link.active {
+		color: #28af72;
+	}
+
+	/* .navbar-custom.top-nav-collapse {
+		padding: 0.375rem 1.5rem 0.375rem 2rem;
+
+	} */
+
+	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
+		color: #fff;
+	}
+
+	.navbar-custom.top-nav-collapse .nav-item .nav-link {
+		color: #fff;
+	}
+
+	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
+	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
+		color: #28af72;
+	}
+	/* end of navigation */
+
+	/* Header */
+	.header .header-content {
+		/* padding-top: 13rem;
+		padding-bottom: 7.5rem; */
+		height: 100vh;
+	}
+
+	.header {
+		background-image: url("../images/flauta-transparent.png"), url("../images/pandeiro-transparent.png"),
+			url("../images/notas-transparent.png"), url("../images/violao-transparent.png");
+		background-position: left top, right top, left bottom, right bottom;
+		background-size: 28%;
+		background-repeat: no-repeat;
+		/* background-image: url("../images/header-bg.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;*/
+		margin-top: 0;
+	}
+
+	/* end of header */
+
+	/* Activities */
+	.activities .activities-container {
+		max-width: 70%;
+		padding-top: 5.375rem;
+	}
+
+	.activities .area-1 {
+		height: 27rem;
+	}
+	/* end of Activities */
+
+	/* Indicate */
+	.indicate .indicate-container {
+		max-width: 70%;
+	}
+
+	.indicate #tab-2 .list-unstyled {
+		display: inline-block;
+		width: 45%;
+		margin-top: 0;
+	}
+
+	.indicate #tab-2 .list-unstyled.first {
+		margin-right: 2rem;
+	}
+	/* end of Indicate */
+
+	/* Benefits */
+	.slider .swiper-button-prev {
+		left: 1rem;
+		width: 1.375rem;
+		background-size: 1.375rem 2.125rem;
+	}
+
+	.slider .swiper-button-next {
+		right: 1rem;
+		width: 1.375rem;
+		background-size: 1.375rem 2.125rem;
+	}
+
+	/* end of Benefits */
+
+	/* About */
+	.aboutme #aboutme {
+		text-align: left;
+	}
+
+	.aboutme .image-container {
+		text-align: center;
+	}
+
+	/* end of about */
+
+	/* Contact */
+	.contact .list-unstyled li {
+		display: block;
+		margin-right: 1rem;
+	}
+
+	.flex-thought {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.flex-thought .text-container {
+		margin-top: -4rem;
+	}
+	/* end of contact */
+}
+/* end of min-width width 768px */
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+	/* General Styles */
+	.p-heading {
+		width: 65%;
+	}
+	/* end of general styles */
+
+	/* Navigation */
+	.navbar-custom .navbar-brand.logo-image img {
+		margin-left: -3rem;
+	}
+
+	/* end of navigation */
+
+	/* Header */
+	.header {
+		background-image: url("../images/flauta-transparent.png"), url("../images/pandeiro-transparent.png"),
+			url("../images/notas-transparent.png"), url("../images/violao-transparent.png");
+		background-position: left top, right top, left bottom, right bottom;
+		background-size: 28%;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* .header .header-content {
+		padding-top: 14rem;
+		padding-bottom: 15rem;
+	} */
+
+	.header .text-container {
+		margin-top: 6.5rem;
+	}
+	/* end of header */
+
+	/* Music Theraypy */
+	.basic-1 {
+		padding-top: 6.875rem;
+	}
+
+	.basic-1 .text-container {
+		margin-bottom: 0;
+	}
+	/* end of Music Theraypy */
+
+	/* Description */
+	.cards-1 .card {
+		display: inline-block;
+		max-width: 17.5rem;
+		text-align: center;
+		vertical-align: top;
+	}
+
+	.card-flex {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	/* end of description */
+
+	/* Activities */
+	.activities {
+		display: flex;
+		height: 34.625rem;
+	}
+
+	.activities .area-1 {
+		width: 50%;
+		height: 100%;
+		display: inline-block;
+		background-size: cover;
+	}
+
+	.activities .area-2 {
+		width: 50%;
+		height: 100%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.activities .activities-container {
+		max-width: 88%;
+		margin-left: 2rem;
+	}
+
+	/* end of Activities */
+
+	/* Indicate */
+	.indicate {
+		display: flex;
+		height: 36.125rem;
+	}
+
+	.indicate .area-1 {
+		width: 50%;
+		height: 100%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.indicate .area-2 {
+		width: 50%;
+		height: 100%;
+		display: inline-block;
+	}
+
+	.indicate .indicate-container {
+		max-width: 88%;
+		margin-left: 2rem;
+		padding-top: 5.75rem;
+		padding-bottom: 0;
+	}
+	/* end of Indicate */
+
+	/* Benefits */
+
+	/* end of Benefits */
+
+	/* About */
+	.aboutme .image-container {
+		margin-bottom: 0;
+	}
+	/* end of About */
+
+	/* Contact */
+	.contact {
+		padding-top: 6.875rem;
+	}
+
+	.contact .text-container {
+		margin-bottom: 0;
+	}
+
+	.flex-thought {
+		margin-top: 6rem;
+		margin-left: 3rem;
+		flex-wrap: nowrap;
+	}
+	.flex-thought .text-container {
+		max-width: 12rem;
+	}
+	/* end of contact */
+}
+/* end of min-width width 992px */
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+	/* General Styles */
+	.p-heading {
+		width: 55%;
+	}
+	/* end of general styles */
+
+	/* Navigation */
+	/* .navbar-custom {
+		padding-right: 18rem;
+		padding-left: 21rem;
+		justify-content: center;
+	}
+
+	.navbar-custom.top-nav-collapse {
+		padding-right: 18rem;
+		padding-left: 21rem;
+	} */
+	/* end of navigation */
+
+	/* Header */
+	.header {
+		display: flex;
+		flex-direction: column;
+	}
+	/* .header .header-content {
+		padding-top: 14.75rem;
+		padding-bottom: 17.5rem;
+	} */
+	/* end of header */
+
+	/* Music Theraypy */
+	.basic-1 .text-container {
+		margin-top: 0.875rem;
+		margin-right: 3rem;
+	}
+	/* end of Music Theraypy */
+
+	/* Description */
+	.cards-1 .card {
+		max-width: 21rem;
+		text-align: center;
+	}
+
+	/* end of description */
+
+	/* Activities */
+	.activities .activities-container {
+		max-width: 30rem;
+		margin-left: 5rem;
+	}
+	/* end of Activities */
+
+	/* Indicate */
+	.indicate .indicate-container {
+		max-width: 30rem;
+		margin-right: 5rem;
+		margin-left: auto;
+	}
+	/* end of Indicate */
+
+	/* Benefits */
+
+	/* end of Benefits */
+
+	/* About */
+	.aboutme {
+		padding-bottom: 6.125rem;
+	}
+
+	.aboutme .image-container {
+		margin-right: 1.5rem;
+
+	}
+	
+	.aboutme .text-container {
+		margin-top: 0.375rem;
+		margin-right: 2.5rem;
+		width: 34rem;
+		text-align: center;
+		margin-left: -1rem;
+	}
+	/* end of About */
+
+	/* Contact */
+	.contact .text-container {
+		margin-top: 0.875rem;
+		margin-right: 1.5rem;
+	}
+
+	.contact form {
+		margin-left: 1.5rem;
+	}
+
+	.flex-thought {
+		margin-left: -2rem;
+	}
+	.flex-thought .text-container {
+		max-width: 20rem;
+		margin-top: -3rem;
+		margin-left: -1rem;
+	}
+	/* end of contact */
+
+	/* Footer */
+	.footer .text-container.about {
+		margin-right: 5rem;
+	}
+	/* end of footer */
+}
+/* end of min-width width 1200px */
+
+/* Min-width width 1600px */
+@media (min-width: 1600px) {
+	/* Navigation */
+	/* .navbar-custom {
+		padding-right: 18rem;
+		padding-left: 21rem;
+	}
+
+	.navbar-custom.top-nav-collapse {
+		padding-right: 18rem;
+		padding-left: 21rem;
+	} */
+	/* end of navigation */
+}
+/* end of min-width width 1200px */

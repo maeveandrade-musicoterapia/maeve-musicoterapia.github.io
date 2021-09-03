@@ -811,33 +811,35 @@ strong {
 	column-gap: 4rem;
 }
 
-.flex-thought {
+.flex-idea {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 5rem;
+	/* margin-top: 5rem; */
 	flex-wrap: wrap;
 }
 
-.flex-thought .image-container {
-	flex: 0 0 16rem;
-	border: 0;
+.flex-idea .image-container {
+	flex: 0 0 15rem;
+	/* border: 0;
 	margin-bottom: 1rem;
 	margin-top: -3rem;
-	text-align: center;
+	text-align: center; */
 }
 
-.flex-thought .image-container img {
+.flex-idea .image-container img {
 	border-radius: 50%;
 	box-shadow: inset 0 0 1.5em #7c74c5, 0 0 0.2em #1a1447;
 }
 
-.flex-thought .text-container {
+.flex-idea .text-container {
 	flex: 0 0 20rem;
+	margin-top: 0.5rem;
 }
 
-.flex-thought .text-container p {
+.flex-idea .text-container p {
 	font-style: italic;
+	line-height: 2rem;
 }
 
 .whats-btn {
@@ -1144,13 +1146,14 @@ a:hover.back-to-top {
 		margin-right: 1rem;
 	}
 
-	.flex-thought {
+	/* .flex-idea {
 		justify-content: center;
 		align-items: center;
-	}
+	} */
 
-	.flex-thought .text-container {
-		margin-top: -4rem;
+	.flex-idea .text-container {
+		margin-top: 0;
+		margin-left: 1rem;
 	}
 	/* end of contact */
 }
@@ -1285,17 +1288,18 @@ a:hover.back-to-top {
 		padding-top: 6.875rem;
 	}
 
-	.contact .text-container {
+	/* .contact .text-container {
 		margin-bottom: 0;
-	}
+	} */
 
-	.flex-thought {
-		margin-top: 6rem;
-		margin-left: 3rem;
+	.flex-idea {
+		/* margin-top: 6rem; */
+		/* margin-left: 3rem; */
 		flex-wrap: nowrap;
 	}
-	.flex-thought .text-container {
-		max-width: 12rem;
+	.flex-idea .text-container {
+		max-width: 15rem;
+		margin-left: 0;
 	}
 	/* end of contact */
 }
@@ -1388,7 +1392,7 @@ a:hover.back-to-top {
 
 	/* Contact */
 	.contact .text-container {
-		margin-top: 0.875rem;
+		/* margin-top: 0.875rem; */
 		margin-right: 1.5rem;
 	}
 
@@ -1396,13 +1400,13 @@ a:hover.back-to-top {
 		margin-left: 1.5rem;
 	}
 
-	.flex-thought {
+	/* .flex-idea {
 		margin-left: -2rem;
-	}
-	.flex-thought .text-container {
+	} */
+	.flex-idea .text-container {
 		max-width: 20rem;
-		margin-top: -3rem;
-		margin-left: -1rem;
+		/* margin-top: -3rem; */
+		margin-left: 0.5rem;
 	}
 	/* end of contact */
 

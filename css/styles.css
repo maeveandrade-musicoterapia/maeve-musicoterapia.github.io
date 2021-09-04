@@ -47,14 +47,6 @@ p {
 	font: 500 1.08rem/1.5625rem "Open Sans", sans-serif;
 }
 
-.p-large {
-	font: 500 1.125rem/1.625rem "Open Sans", sans-serif;
-}
-
-.p-small {
-	font: 500 0.875rem/1.375rem "Open Sans", sans-serif;
-}
-
 .p-heading {
 	margin-bottom: 3.5rem;
 	text-align: center;
@@ -135,25 +127,6 @@ strong {
 	margin-bottom: 1.5rem;
 }
 
-.btn-solid-reg {
-	display: inline-block;
-	padding: 1.1875rem 1.875rem 1.1875rem 1.875rem;
-	border: 0.125rem solid #28af72;
-	border-radius: 0.25rem;
-	background-color: #28af72;
-	color: #fff;
-	font: 700 0.75rem/0 "Kaushan Script", cursive;
-
-	text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-solid-reg:hover {
-	background-color: transparent;
-	color: #28af72;
-	text-decoration: none;
-}
-
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.125rem 1.375rem 2.125rem;
@@ -172,59 +145,6 @@ strong {
 	text-decoration: none;
 }
 
-.btn-outline-reg {
-	display: inline-block;
-	padding: 1.1875rem 1.875rem 1.1875rem 1.875rem;
-	border: 0.125rem solid #787976;
-	border-radius: 0.25rem;
-	background-color: transparent;
-	color: #787976;
-	font: 700 0.75rem/0 "Kaushan Script", cursive;
-	text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-outline-reg:hover {
-	background-color: #787976;
-	color: #fff;
-	text-decoration: none;
-}
-
-.btn-outline-lg {
-	display: inline-block;
-	padding: 1.375rem 2.125rem 1.375rem 2.125rem;
-	border: 0.125rem solid #787976;
-	border-radius: 0.25rem;
-	background-color: transparent;
-	color: #787976;
-	font: 700 0.75rem/0 "Kaushan Script", cursive;
-	text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-outline-lg:hover {
-	background-color: #787976;
-	color: #fff;
-	text-decoration: none;
-}
-
-.btn-outline-sm {
-	display: inline-block;
-	padding: 1rem 1.625rem 0.9375rem 1.625rem;
-	border: 0.125rem solid #787976;
-	border-radius: 0.25rem;
-	background-color: transparent;
-	color: #787976;
-	font: 700 0.75rem/0 "Kaushan Script", cursive;
-	text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-outline-sm:hover {
-	background-color: #787976;
-	color: #fff;
-	text-decoration: none;
-}
 
 /*************************/
 /*     02. Preloader     */
@@ -384,17 +304,10 @@ strong {
 	background-position: left top, right top, left bottom, right bottom;
 	background-size: 28%;
 	background-repeat: no-repeat;
-	/* background-image: url("../images/header-bg3x.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat; */
 	margin-top: 5.3rem;
-	/* display: flex;
-	flex-direction: column; */
 }
 
 .header .header-content {
-	/* padding-top: 8rem;
-	padding-bottom: 2.125rem; */
 	text-align: center;
 	height: calc(91vh - 5.3rem);
 	display: flex;
@@ -402,10 +315,6 @@ strong {
 	justify-content: center;
 	align-items: center;
 }
-
-/* .header .text-container {
-	margin-bottom: 3rem;
-} */
 
 .header h1 {
 	margin-bottom: 0.5rem;
@@ -415,7 +324,8 @@ strong {
 	height: 4.5rem;
 }
 
-.header .p-large {
+.header .text-container p {
+	font: 500 1.125rem/1.625rem "Open Sans", sans-serif;
 	margin-bottom: 2rem;
 	color: #dc858a;
 }
@@ -442,25 +352,6 @@ strong {
 	margin-bottom: 1.375rem;
 	font: 700 1.25rem/1.75rem "Kaushan Script", cursive;
 }
-
-/* Hover Animation */
-/* .basic-1 .image-container {
-	overflow: hidden;
-	border-radius: 0.25rem;
-}
-
-.basic-1 .image-container img {
-	margin: 0;
-	border-radius: 0.25rem;
-	transition: all 0.3s;
-}
-
-.basic-1 .image-container:hover img {
-	-moz-transform: scale(1.15);
-	-webkit-transform: scale(1.15);
-	transform: scale(1.15);
-} */
-/* end of hover animation */
 
 /***************************/
 /*     06. Description     */
@@ -659,6 +550,10 @@ strong {
 	margin-bottom: 0;
 }
 
+.card-image {
+	padding: 0.25rem 0.25rem 0 0.25rem; 
+}
+
 /*********************/
 /*     11. About     */
 /*********************/
@@ -703,25 +598,6 @@ strong {
 .about #about {
 	text-align: center;
 }
-
-/* Hover Animation */
-/* .about .image-container {
-	overflow: hidden;
-	border-radius: 0.25rem;
-}
-
-.about .image-container img {
-	margin: 0;
-	border-radius: 0.25rem;
-	transition: all 0.3s;
-}
-
-.about .image-container:hover img {
-	-moz-transform: scale(1.15);
-	-webkit-transform: scale(1.15);
-	transform: scale(1.15);
-} */
-/* end of hover animation */
 
 /***********************/
 /*     12. Contact     */
@@ -815,16 +691,11 @@ strong {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* margin-top: 5rem; */
 	flex-wrap: wrap;
 }
 
 .flex-idea .image-container {
 	flex: 0 0 15rem;
-	/* border: 0;
-	margin-bottom: 1rem;
-	margin-top: -3rem;
-	text-align: center; */
 }
 
 .flex-idea .image-container img {
@@ -914,6 +785,7 @@ strong {
 
 .copyright p,
 .copyright a {
+	font: 500 0.875rem/1.375rem "Open Sans", sans-serif;
 	color: #bbbbbb;
 	text-decoration: none;
 }
@@ -975,7 +847,6 @@ a:hover.back-to-top {
 
 	/* Navigation */
 	.navbar-custom {
-		/* padding: 1.125rem 1.5rem 1.125rem 2rem; */
 		box-shadow: none;
 		background: transparent;
 		justify-content: center;
@@ -1047,11 +918,6 @@ a:hover.back-to-top {
 		color: #28af72;
 	}
 
-	/* .navbar-custom.top-nav-collapse {
-		padding: 0.375rem 1.5rem 0.375rem 2rem;
-
-	} */
-
 	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
 		color: #fff;
 	}
@@ -1068,8 +934,6 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		/* padding-top: 13rem;
-		padding-bottom: 7.5rem; */
 		height: 100vh;
 	}
 
@@ -1079,12 +943,8 @@ a:hover.back-to-top {
 		background-position: left top, right top, left bottom, right bottom;
 		background-size: 28%;
 		background-repeat: no-repeat;
-		/* background-image: url("../images/header-bg.jpg");
-		background-size: 100%;
-		background-repeat: no-repeat;*/
 		margin-top: 0;
 	}
-
 	/* end of header */
 
 	/* Activities */
@@ -1146,11 +1006,6 @@ a:hover.back-to-top {
 		margin-right: 1rem;
 	}
 
-	/* .flex-idea {
-		justify-content: center;
-		align-items: center;
-	} */
-
 	.flex-idea .text-container {
 		margin-top: 0;
 		margin-left: 1rem;
@@ -1171,7 +1026,6 @@ a:hover.back-to-top {
 	.navbar-custom .navbar-brand.logo-image img {
 		margin-left: -3rem;
 	}
-
 	/* end of navigation */
 
 	/* Header */
@@ -1184,11 +1038,6 @@ a:hover.back-to-top {
 		display: flex;
 		flex-direction: column;
 	}
-
-	/* .header .header-content {
-		padding-top: 14rem;
-		padding-bottom: 15rem;
-	} */
 
 	.header .text-container {
 		margin-top: 6.5rem;
@@ -1273,10 +1122,6 @@ a:hover.back-to-top {
 	}
 	/* end of Indicate */
 
-	/* Benefits */
-
-	/* end of Benefits */
-
 	/* About */
 	.about .image-container {
 		margin-bottom: 0;
@@ -1288,13 +1133,7 @@ a:hover.back-to-top {
 		padding-top: 6.875rem;
 	}
 
-	/* .contact .text-container {
-		margin-bottom: 0;
-	} */
-
 	.flex-idea {
-		/* margin-top: 6rem; */
-		/* margin-left: 3rem; */
 		flex-wrap: nowrap;
 	}
 	.flex-idea .text-container {
@@ -1313,28 +1152,11 @@ a:hover.back-to-top {
 	}
 	/* end of general styles */
 
-	/* Navigation */
-	/* .navbar-custom {
-		padding-right: 18rem;
-		padding-left: 21rem;
-		justify-content: center;
-	}
-
-	.navbar-custom.top-nav-collapse {
-		padding-right: 18rem;
-		padding-left: 21rem;
-	} */
-	/* end of navigation */
-
 	/* Header */
 	.header {
 		display: flex;
 		flex-direction: column;
 	}
-	/* .header .header-content {
-		padding-top: 14.75rem;
-		padding-bottom: 17.5rem;
-	} */
 	/* end of header */
 
 	/* Music Theraypy */
@@ -1367,10 +1189,6 @@ a:hover.back-to-top {
 	}
 	/* end of Indicate */
 
-	/* Benefits */
-
-	/* end of Benefits */
-
 	/* About */
 	.about {
 		padding-bottom: 6.125rem;
@@ -1378,7 +1196,6 @@ a:hover.back-to-top {
 
 	.about .image-container {
 		margin-right: 1.5rem;
-
 	}
 	
 	.about .text-container {
@@ -1392,7 +1209,6 @@ a:hover.back-to-top {
 
 	/* Contact */
 	.contact .text-container {
-		/* margin-top: 0.875rem; */
 		margin-right: 1.5rem;
 	}
 
@@ -1400,36 +1216,13 @@ a:hover.back-to-top {
 		margin-left: 1.5rem;
 	}
 
-	/* .flex-idea {
-		margin-left: -2rem;
-	} */
 	.flex-idea .text-container {
 		max-width: 20rem;
 		/* margin-top: -3rem; */
 		margin-left: 0.5rem;
 	}
 	/* end of contact */
-
-	/* Footer */
-	/* .footer .text-container.about {
-		margin-right: 5rem;
-	} */
-	/* end of footer */
 }
 /* end of min-width width 1200px */
 
-/* Min-width width 1600px */
-@media (min-width: 1600px) {
-	/* Navigation */
-	/* .navbar-custom {
-		padding-right: 18rem;
-		padding-left: 21rem;
-	}
 
-	.navbar-custom.top-nav-collapse {
-		padding-right: 18rem;
-		padding-left: 21rem;
-	} */
-	/* end of navigation */
-}
-/* end of min-width width 1200px */

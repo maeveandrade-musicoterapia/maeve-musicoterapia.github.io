@@ -13,7 +13,6 @@
         hidePreloader();
     });
 
-
     /* Navbar Scripts */
     // jQuery to collapse the navbar on scroll
     $(window).on('scroll load', function () {
@@ -24,7 +23,7 @@
         }
     })
 
-    function whichLogo (e) {
+    function toggleNavbarLogo (e) {
         e.preventDefault();
         if ($(window).scrollTop() === 0 && window.innerWidth > 767) {
             $(".logo-image img").attr("src", "images/logo-clave-verde.png")
@@ -32,9 +31,9 @@
             $(".logo-image img").attr("src", "images/logo-clave-branco-verde.png")
         }
     }
-    $(window).scroll(whichLogo);
-    $(window).resize(whichLogo);
-    $(window).on('load', whichLogo);
+    $(window).scroll(toggleNavbarLogo);
+    $(window).resize(toggleNavbarLogo);
+    $(window).on('load', toggleNavbarLogo);
 
 
     //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -53,18 +52,6 @@
         if (!$(this).parent().hasClass('dropdown'))
             $(".navbar-collapse").collapse('hide');
     });
-
-
-
-    /* Rotating Text - Morphtext */
-    // $(window).on('resize load', function() {
-    //     if(window.matchMedia("(max-width: 767px)").matches) {
-    //         $("#js-rotating").html("")
-    //     } 
-    //     else {
-    //         $("#js-rotating").html("")
-    //     }        
-    // })
 
     $("#js-rotating").Morphext({
         // The [in] animation type. Refer to Animate.css for a list of available animations.
@@ -103,10 +90,6 @@
         }
     });
 
-    
-
-    
-
     /* Back To Top Button */
     // create the back to top button
     $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
@@ -123,9 +106,6 @@
     $(".button, a, button").mouseup(function () {
         $(this).blur();
     });
-
-
-
-
+    
 })(jQuery);
 

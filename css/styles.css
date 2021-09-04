@@ -5,9 +5,9 @@ Table Of Contents:
 02. Preloader
 03. Navigation
 04. Header
-05. Music Theraypy
+05. Music Therapy
 06. Description
-07. Atendimentos
+07. Attendance
 08. Activities
 09. Indicate
 10. Benefits
@@ -57,10 +57,6 @@ p {
 	margin-bottom: 0.375rem;
 }
 
-.indent {
-	padding-left: 1.25rem;
-}
-
 h1 {
 	color: #484a46;
 	font: 700 2.5rem/3rem "Kaushan Script", cursive;
@@ -105,10 +101,6 @@ a {
 a:hover {
 	color: #787976;
 	text-decoration: underline;
-}
-
-a.green {
-	color: #28af72;
 }
 
 a.white,
@@ -239,14 +231,6 @@ strong {
 	-webkit-backface-visibility: hidden;
 }
 
-.navbar-custom .navbar-brand.logo-text {
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-	font: 700 2.25rem/1.5rem "Kaushan Script", cursive;
-	color: #fff;
-	text-decoration: none;
-}
-
 .navbar-custom .navbar-nav {
 	margin-top: 0.75rem;
 	margin-bottom: 0.5rem;
@@ -291,10 +275,6 @@ strong {
 	margin-right: 0.125rem;
 }
 
-.myMenu {
-	justify-content: space-around;
-}
-
 /*********************/
 /*    04. Header     */
 /*********************/
@@ -336,19 +316,19 @@ strong {
 }
 
 /*********************/
-/*     05. Music Theraypy     */
+/*     05. Music Therapy     */
 /*********************/
-.basic-1 {
+.music-therapy {
 	padding-top: 6.5rem;
 	padding-bottom: 3rem;
 }
 
-.basic-1 .text-container {
+.music-therapy .text-container {
 	margin-bottom: 3rem;
 	text-align: center;
 }
 
-.basic-1 h3 {
+.music-therapy h3 {
 	margin-bottom: 1.375rem;
 	font: 700 1.25rem/1.75rem "Kaushan Script", cursive;
 }
@@ -356,22 +336,22 @@ strong {
 /***************************/
 /*     06. Description     */
 /***************************/
-.cards-1 {
+.description {
 	padding-top: 3rem;
 	padding-bottom: 2.875rem;
 }
-.cards-1 h3 {
+.description h3 {
 	margin-bottom: 3.25rem;
 	text-align: center;
 	margin-top: 1rem;
 }
-.cards-1 .card {
+.description .card {
 	margin-bottom: 2.5rem;
 	border: none;
 	text-align: center;
 }
 
-.cards-1 .fa-stack {
+.description .fa-stack {
 	width: 6rem;
 	height: 6rem;
 	margin-right: auto;
@@ -381,7 +361,7 @@ strong {
 	text-align: left;
 }
 
-.cards-1 .fa-stack .hexagon {
+.description .fa-stack .hexagon {
 	position: absolute;
 	width: 6rem;
 	height: 6rem;
@@ -389,21 +369,21 @@ strong {
 	background-size: 6rem 6rem;
 }
 
-.cards-1 .fa-stack-1x {
+.description .fa-stack-1x {
 	color: #fff;
 	font-size: 2rem;
 }
 
-.cards-1 .card-body {
+.description .card-body {
 	padding: 0;
 }
 
-.cards-1 .card-title {
+.description .card-title {
 	margin-bottom: 0.625rem;
 }
 
 /************************/
-/*     07. Atendimentos     */
+/*     07. Attendance     */
 /************************/
 .attendance {
 	padding-top: 6.625rem;
@@ -438,18 +418,6 @@ strong {
 	padding-top: 5.375rem;
 	padding-bottom: 1.5rem;
 	text-align: center;
-}
-
-.activities h2 {
-	margin-bottom: 1.625rem;
-}
-
-.activities .item {
-	margin-bottom: 2rem;
-}
-
-.activities h4 {
-	margin-bottom: 0;
 }
 
 /*************************/
@@ -559,7 +527,7 @@ strong {
 /*********************/
 .about {
 	padding-top: 6.875rem;
-	padding-bottom: 5.25rem;
+	padding-bottom: 6.125rem;
 }
 
 .about .image-container {
@@ -569,10 +537,6 @@ strong {
 
 .about .text-container {
 	text-align: center;
-}
-
-.about h2 {
-	margin-bottom: 1.375rem;
 }
 
 .about .list-unstyled {
@@ -593,10 +557,6 @@ strong {
 }
 .about .list-unstyled .media-body {
 	margin-left: 0.625rem;
-}
-
-.about #about {
-	text-align: center;
 }
 
 /***********************/
@@ -825,16 +785,6 @@ a:hover.back-to-top {
 	/* end of general styles */
 }
 
-/* Min-width width 576px */
-@media (min-width: 576px) {
-	/* Benefits */
-	.benefits .card-deck {
-		flex-wrap: wrap;
-		align-items: stretch;
-	}
-	/* end of benefits */
-}
-
 /* Min-width width 768px */
 @media (min-width: 768px) {
 	/* General Styles */
@@ -899,10 +849,6 @@ a:hover.back-to-top {
 		color: #28af72;
 	}
 
-	.navbar-custom .navbar-brand.logo-text {
-		color: #fff;
-	}
-
 	.navbar-custom .navbar-nav {
 		margin-top: 0;
 		margin-bottom: 0;
@@ -916,10 +862,6 @@ a:hover.back-to-top {
 	.navbar-custom .nav-item .nav-link:hover,
 	.navbar-custom .nav-item .nav-link.active {
 		color: #28af72;
-	}
-
-	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
-		color: #fff;
 	}
 
 	.navbar-custom.top-nav-collapse .nav-item .nav-link {
@@ -963,15 +905,6 @@ a:hover.back-to-top {
 		max-width: 70%;
 	}
 
-	.indicate #tab-2 .list-unstyled {
-		display: inline-block;
-		width: 45%;
-		margin-top: 0;
-	}
-
-	.indicate #tab-2 .list-unstyled.first {
-		margin-right: 2rem;
-	}
 	/* end of Indicate */
 
 	/* Benefits */
@@ -988,17 +921,6 @@ a:hover.back-to-top {
 	}
 
 	/* end of Benefits */
-
-	/* About */
-	.about #about {
-		text-align: left;
-	}
-
-	.about .image-container {
-		text-align: center;
-	}
-
-	/* end of about */
 
 	/* Contact */
 	.contact .list-unstyled li {
@@ -1044,18 +966,18 @@ a:hover.back-to-top {
 	}
 	/* end of header */
 
-	/* Music Theraypy */
-	.basic-1 {
+	/* Music Therapy */
+	.music-therapy {
 		padding-top: 6.875rem;
 	}
 
-	.basic-1 .text-container {
+	.music-therapy .text-container {
 		margin-bottom: 0;
 	}
-	/* end of Music Theraypy */
+	/* end of Music Therapy */
 
 	/* Description */
-	.cards-1 .card {
+	.description .card {
 		display: inline-block;
 		max-width: 17.5rem;
 		text-align: center;
@@ -1159,15 +1081,15 @@ a:hover.back-to-top {
 	}
 	/* end of header */
 
-	/* Music Theraypy */
-	.basic-1 .text-container {
+	/* Music Therapy */
+	.music-therapy .text-container {
 		margin-top: 0.875rem;
 		margin-right: 3rem;
 	}
-	/* end of Music Theraypy */
+	/* end of Music Therapy */
 
 	/* Description */
-	.cards-1 .card {
+	.description .card {
 		max-width: 21rem;
 		text-align: center;
 	}
@@ -1190,10 +1112,6 @@ a:hover.back-to-top {
 	/* end of Indicate */
 
 	/* About */
-	.about {
-		padding-bottom: 6.125rem;
-	}
-
 	.about .image-container {
 		margin-right: 1.5rem;
 	}
@@ -1212,13 +1130,8 @@ a:hover.back-to-top {
 		margin-right: 1.5rem;
 	}
 
-	.contact form {
-		margin-left: 1.5rem;
-	}
-
 	.flex-idea .text-container {
 		max-width: 20rem;
-		/* margin-top: -3rem; */
 		margin-left: 0.5rem;
 	}
 	/* end of contact */

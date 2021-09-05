@@ -880,11 +880,6 @@ a:hover.back-to-top {
 	}
 
 	.header {
-		background-image: url("../images/flauta-transparent.png"), url("../images/pandeiro-transparent.png"),
-			url("../images/notas-transparent.png"), url("../images/violao-transparent.png");
-		background-position: left top, right top, left bottom, right bottom;
-		background-size: 28%;
-		background-repeat: no-repeat;
 		margin-top: 0;
 	}
 	/* end of header */
@@ -951,16 +946,6 @@ a:hover.back-to-top {
 	/* end of navigation */
 
 	/* Header */
-	.header {
-		background-image: url("../images/flauta-transparent.png"), url("../images/pandeiro-transparent.png"),
-			url("../images/notas-transparent.png"), url("../images/violao-transparent.png");
-		background-position: left top, right top, left bottom, right bottom;
-		background-size: 28%;
-		background-repeat: no-repeat;
-		display: flex;
-		flex-direction: column;
-	}
-
 	.header .text-container {
 		margin-top: 6.5rem;
 	}
@@ -1074,13 +1059,6 @@ a:hover.back-to-top {
 	}
 	/* end of general styles */
 
-	/* Header */
-	.header {
-		display: flex;
-		flex-direction: column;
-	}
-	/* end of header */
-
 	/* Music Therapy */
 	.music-therapy .text-container {
 		margin-top: 0.875rem;
@@ -1138,4 +1116,13 @@ a:hover.back-to-top {
 }
 /* end of min-width width 1200px */
 
-
+@media (max-height: 400px) and (min-width: 768px) {
+	/* Header */
+	.header .header-content {
+		justify-content: flex-end;
+	}
+	.navbar {
+		background-color: inherit;
+	}
+	/* end of Header */
+}

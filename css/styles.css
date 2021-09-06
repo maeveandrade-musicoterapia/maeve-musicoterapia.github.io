@@ -503,7 +503,6 @@ strong {
 }
 
 .slider .card {
-	position: relative;
 	border: solid 1px #7c74c5;
 	box-shadow: 2px 2px 3px #888888;
 	background-color: transparent;

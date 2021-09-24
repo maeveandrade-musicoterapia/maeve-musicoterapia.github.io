@@ -137,7 +137,6 @@ strong {
 	text-decoration: none;
 }
 
-
 /*************************/
 /*     02. Preloader     */
 /*************************/
@@ -399,43 +398,26 @@ strong {
 .attendance h3 {
 	margin-bottom: 1.75rem;
 	text-align: center;
+	padding-top: 1rem;
 }
 
 /*************************/
 /*     08. Activities     */
 /*************************/
-.activities .area-1 {
-	height: 27rem;
-	background: url("../images/maeve1.jpg") no-repeat;
-	background-size: cover;
-	background-position: center top;
+.activities {
+	margin-bottom: 3rem;
 }
 
-.activities .activities-container {
-	max-width: 90%;
-	margin-right: auto;
-	margin-left: auto;
-	padding-top: 5.375rem;
-	padding-bottom: 1.5rem;
+.activities .text-container {
+	max-width: 88%;
 	text-align: center;
 }
-
 /*************************/
 /*     09. Indicate     */
 /*************************/
-.indicate .indicate-container {
-	max-width: 90%;
-	margin-right: auto;
-	margin-left: auto;
-	padding-top: 2rem;
-	padding-bottom: 5.75rem;
+.indicate .text-container {
+	max-width: 88%;
 	text-align: center;
-}
-
-.indicate .area-2 {
-	height: 27rem;
-	background: url("../images/maeve2.jpg") center center no-repeat;
-	background-size: cover;
 }
 
 .indicate .list-unstyled {
@@ -518,7 +500,7 @@ strong {
 }
 
 .card-image {
-	padding: 0.25rem 0.25rem 0 0.25rem; 
+	padding: 0.25rem 0.25rem 0 0.25rem;
 }
 
 /*********************/
@@ -639,6 +621,33 @@ strong {
 	color: #28af72;
 }
 
+.h2-small {
+	font: 500 1.08rem/1.5625rem "Open Sans", sans-serif;
+}
+
+.whats-btn {
+	position: absolute;
+	animation: pulse 1s infinite;
+	animation-timing-function: linear;
+	margin-left: 8px;
+}
+
+.whats-btn:hover {
+	transform: scale(1.1);
+	transition: all ease 500ms;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 .flex-social {
 	display: flex;
 	justify-content: center;
@@ -672,29 +681,6 @@ strong {
 	line-height: 2rem;
 }
 
-.whats-btn {
-	position: absolute;
-	animation: pulse 1s infinite;
-	animation-timing-function: linear;
-	margin-left: 8px;
-}
-
-.whats-btn:hover {
-	transform: scale(1.1);
-	transition: all ease 500ms;
-}
-@keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(1.1);
-	}
-	100% {
-		transform: scale(1);
-	}
-}
-
 /**********************/
 /*     13. Footer     */
 /**********************/
@@ -709,7 +695,7 @@ strong {
 	margin: 0 auto 1rem;
 }
 
-.footer h4 {
+.footer h3 {
 	margin-bottom: 0.75rem;
 	color: #fff;
 	text-align: center;
@@ -883,24 +869,6 @@ a:hover.back-to-top {
 	}
 	/* end of header */
 
-	/* Activities */
-	.activities .activities-container {
-		max-width: 70%;
-		padding-top: 5.375rem;
-	}
-
-	.activities .area-1 {
-		height: 27rem;
-	}
-	/* end of Activities */
-
-	/* Indicate */
-	.indicate .indicate-container {
-		max-width: 70%;
-	}
-
-	/* end of Indicate */
-
 	/* Benefits */
 	.slider .swiper-button-prev {
 		left: 1rem;
@@ -977,54 +945,17 @@ a:hover.back-to-top {
 	/* Activities */
 	.activities {
 		display: flex;
-		height: 34.625rem;
-	}
+		flex-direction: column;
+		align-items: center;
 
-	.activities .area-1 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-		background-size: cover;
 	}
-
-	.activities .area-2 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-		vertical-align: top;
-	}
-
-	.activities .activities-container {
-		max-width: 88%;
-		margin-left: 2rem;
-	}
-
 	/* end of Activities */
 
 	/* Indicate */
 	.indicate {
 		display: flex;
-		height: 36.125rem;
-	}
-
-	.indicate .area-1 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-		vertical-align: top;
-	}
-
-	.indicate .area-2 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-	}
-
-	.indicate .indicate-container {
-		max-width: 88%;
-		margin-left: 2rem;
-		padding-top: 5.75rem;
-		padding-bottom: 0;
+		flex-direction: column;
+		align-items: center;
 	}
 	/* end of Indicate */
 
@@ -1073,26 +1004,11 @@ a:hover.back-to-top {
 
 	/* end of description */
 
-	/* Activities */
-	.activities .activities-container {
-		max-width: 30rem;
-		margin-left: 5rem;
-	}
-	/* end of Activities */
-
-	/* Indicate */
-	.indicate .indicate-container {
-		max-width: 30rem;
-		margin-right: 5rem;
-		margin-left: auto;
-	}
-	/* end of Indicate */
-
 	/* About */
 	.about .image-container {
 		margin-right: 1.5rem;
 	}
-	
+
 	.about .text-container {
 		margin-top: 0.375rem;
 		margin-right: 2.5rem;

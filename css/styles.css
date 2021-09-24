@@ -486,8 +486,7 @@ strong {
 
 .slider .card {
 	border: solid 1px #7c74c5;
-	box-shadow: 2px 2px 3px #888888;
-	background-color: transparent;
+	background-color: #fff;
 	margin-bottom: 0.313rem;
 	max-width: 90%;
 }

@@ -54,7 +54,7 @@ p {
 }
 
 .li-space-lg li {
-	margin-bottom: 0.375rem;
+	margin-bottom: 0.75rem;
 }
 
 h1 {
@@ -237,7 +237,7 @@ strong {
 }
 
 .navbar-custom .nav-item .nav-link {
-	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+	padding: 1rem 0.75rem 1rem 0.75rem;
 	color: #fff;
 	text-decoration: none;
 	transition: all 0.2s ease;
@@ -279,8 +279,8 @@ strong {
 /*    04. Header     */
 /*********************/
 .header {
-	background-image: url("../images/flauta-transparent.png"), url("../images/pandeiro-transparent.png"),
-		url("../images/notas-transparent.png"), url("../images/violao-transparent.png");
+	background-image: url("../images/flauta-transparent.webp"), url("../images/pandeiro-transparent.webp"),
+		url("../images/notas-transparent.webp"), url("../images/violao-transparent.webp");
 	background-position: left top, right top, left bottom, right bottom;
 	background-size: 28%;
 	background-repeat: no-repeat;
@@ -575,6 +575,7 @@ strong {
 .contact li {
 	font-weight: bolder;
 	display: block;
+	padding: 0.3rem 0;
 }
 
 .contact .fa-stack {

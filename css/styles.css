@@ -71,7 +71,7 @@ h2 {
 
 h3 {
 	color: #484a46;
-	font: 700 1.5rem/1.75rem "Architects Daughter", cursive;
+	font: 700 1.4rem/1.75rem "Architects Daughter", cursive;
 }
 
 h4 {
@@ -329,7 +329,7 @@ strong {
 	text-align: center;
 }
 
-.music-therapy h4 {
+.music-therapy h3 {
 	margin-bottom: 1.375rem;
 	font: 700 1.25rem/1.75rem "Architects Daughter", cursive;
 }
@@ -346,7 +346,7 @@ strong {
 .description h3.section-title {
 	font-size: 1.5rem;
 }
-.description h4 {
+.description h3 {
 	font: 700 1.375rem/1.75rem "Architects Daughter", cursive;
 	margin-top: 1rem;
 }
@@ -396,7 +396,7 @@ strong {
 	background-color: #ffffff;
 }
 
-.attendance h4 {
+.attendance h3 {
 	margin-bottom: 1rem;
 
 }
@@ -504,10 +504,10 @@ strong {
 	padding-bottom: 6.125rem;
 }
 
-.about h3 {
+.about h1 {
 	font: 700 2.25rem/2.25rem "Architects Daughter", cursive;
 }
-.about h3 strong {
+.about h1 strong {
 	font: 700 1.75rem/1.75rem "Architects Daughter", cursive;
 }
 
@@ -552,9 +552,8 @@ strong {
 .contact .text-container {
 	text-align: center;
 }
-.contact h3 span {
+.h2-small {
 	font: 500 1.125rem/1.5625rem "Open Sans", sans-serif;
-
 }
 .contact h3 {
 	margin-bottom: 1rem;

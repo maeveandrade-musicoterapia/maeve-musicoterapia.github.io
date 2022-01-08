@@ -26,9 +26,9 @@
     function toggleNavbarLogo (e) {
         e.preventDefault();
         if ($(window).scrollTop() === 0 && window.innerWidth > 767) {
-            $(".logo-image img").attr("src", "images/logo-clave-verde.png")
+            $(".logo-image img").attr("src", "images/logo-black.png")
         } else {
-            $(".logo-image img").attr("src", "images/logo-clave-branco-verde.png")
+            $(".logo-image img").attr("src", "images/logo-white.png")
         }
     }
     $(window).scroll(toggleNavbarLogo);

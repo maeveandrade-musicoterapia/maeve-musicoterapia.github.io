@@ -38,406 +38,410 @@ Text-font: "Open Sans", sans-serif;
 /* font-family: 'Architects Daughter', cursive; */
 body,
 html {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body,
 p {
-	color: #787976;
-	font: 500 1.08rem/1.5625rem "Open Sans", sans-serif;
+  color: #787976;
+  font: 500 1.08rem/1.5625rem "Open Sans", sans-serif;
 }
 
 .p-heading {
-	margin-bottom: 3.5rem;
-	text-align: center;
-	font-weight: 600;
+  margin-bottom: 3.5rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .li-space-lg li {
-	margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 h1 {
-	color: #484a46;
-	font: 700 2.25rem/3rem "Architects Daughter", cursive;
-	text-align: center;
+  color: #484a46;
+  font: 700 2.25rem/3rem "Architects Daughter", cursive;
+  text-align: center;
 }
 
 h2 {
-	color: #484a46;
-	font: 700 1.75rem/2.125rem "Architects Daughter", cursive;
+  color: #484a46;
+  font: 700 1.75rem/2.125rem "Architects Daughter", cursive;
 }
 
 h3 {
-	color: #484a46;
-	font: 700 1.4rem/1.75rem "Architects Daughter", cursive;
+  color: #484a46;
+  font: 700 1.4rem/1.75rem "Architects Daughter", cursive;
 }
 
 h4 {
-	color: #484a46;
-	font: 700 1.375rem/1.625rem "Architects Daughter", cursive;
+  color: #484a46;
+  font: 700 1.375rem/1.625rem "Architects Daughter", cursive;
 }
 
 h5 {
-	color: #484a46;
-	font: 700 1.25rem/1.5rem "Architects Daughter", cursive;
+  color: #484a46;
+  font: 700 1.25rem/1.5rem "Architects Daughter", cursive;
 }
 
 h6 {
-	color: #484a46;
-	font: 700 0.875rem/1.375rem "Architects Daughter", cursive;
-	text-align: center;
+  color: #484a46;
+  font: 700 0.875rem/1.375rem "Architects Daughter", cursive;
+  text-align: center;
 }
 
 hr {
-	width: 59%;
+  width: 59%;
 }
 
 a {
-	color: #787976;
-	text-decoration: underline;
+  color: #787976;
+  text-decoration: underline;
 }
 
 a:hover {
-	color: #787976;
-	text-decoration: underline;
+  color: #787976;
+  text-decoration: underline;
 }
 
 a.white,
 .white {
-	color: #bbbbbb;
+  color: #bbbbbb;
 }
 
 strong {
-	color: #484a46;
+  color: #484a46;
 }
 
 .section-title {
-	color: #28af72;
-	font: 500 1.75rem/1.5rem "Architects Daughter", cursive;
-	text-align: center;
-	margin-bottom: 1.5rem;
+  color: #28af72;
+  font: 700 1.75rem/1.5rem "Architects Daughter", cursive;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-
 .btn-solid-lg {
-	display: inline-block;
-	padding: 1.375rem 2.125rem 1.375rem 2.125rem;
-	border: 0.125rem solid #28af72;
-	border-radius: 0.25rem;
-	background-color: #28af72;
-	color: #fff;
-	font: 700 0.75rem/0 "Architects Daughter", cursive;
-	text-decoration: none;
-	transition: all 0.2s;
+  display: inline-block;
+  padding: 1.375rem 2.125rem 1.375rem 2.125rem;
+  border: 0.125rem solid #28af72;
+  border-radius: 0.25rem;
+  background-color: #28af72;
+  color: #fff;
+  font: 700 0.75rem/0 "Architects Daughter", cursive;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
 .btn-solid-lg:hover {
-	background-color: transparent;
-	color: #28af72;
-	text-decoration: none;
+  background-color: transparent;
+  color: #28af72;
+  text-decoration: none;
 }
 
 /*************************/
 /*     02. Preloader     */
 /*************************/
 .spinner-wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	z-index: 999999;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: #1a1447;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #1a1447;
 }
 
 .spinner-wrapper img {
-	margin-bottom: 2rem;
-	height: 10rem;
+  margin-bottom: 2rem;
+  height: 10rem;
 }
 .spinner {
-	margin-bottom: 20vh;
+  margin-bottom: 20vh;
 }
 
 .spinner > div {
-	display: inline-block;
-	width: 1rem;
-	height: 1rem;
-	border-radius: 100%;
-	background-color: #fff;
-	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: #fff;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
 .spinner .bounce1 {
-	-webkit-animation-delay: -0.32s;
-	animation-delay: -0.32s;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
 }
 
 .spinner .bounce2 {
-	-webkit-animation-delay: -0.16s;
-	animation-delay: -0.16s;
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
 }
 
 @-webkit-keyframes sk-bouncedelay {
-	0%,
-	80%,
-	100% {
-		-webkit-transform: scale(0);
-	}
-	40% {
-		-webkit-transform: scale(1);
-	}
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
 }
 
 @keyframes sk-bouncedelay {
-	0%,
-	80%,
-	100% {
-		-webkit-transform: scale(0);
-		-ms-transform: scale(0);
-		transform: scale(0);
-	}
-	40% {
-		-webkit-transform: scale(1);
-		-ms-transform: scale(1);
-		transform: scale(1);
-	}
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 /**************************/
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	padding-top: 0.375rem;
-	padding-bottom: 0.375rem;
-	background-color: #1a1447;
-	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-	font: 600 0.875rem/0.875rem "Architects Daughter", cursive;
-	transition: all 0.2s;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  background-color: #1a1447;
+  box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+  font: 600 0.875rem/0.875rem "Architects Daughter", cursive;
+  transition: all 0.2s;
 }
 
 .navbar-custom .navbar-brand {
-	font-size: 0;
+  font-size: 0;
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-	width: 4rem;
-	height: 4rem;
-	-webkit-backface-visibility: hidden;
+  width: 4rem;
+  height: 4rem;
+  -webkit-backface-visibility: hidden;
 }
 
 .navbar-custom .navbar-nav {
-	margin-top: 0.75rem;
-	margin-bottom: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .navbar-custom .nav-item .nav-link {
-	padding: 1rem 0.75rem 1rem 0.75rem;
-	color: #fff;
-	text-decoration: none;
-	transition: all 0.2s ease;
+  padding: 1rem 0.75rem 1rem 0.75rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #28af72;
+  color: #28af72;
 }
 
 .navbar-custom .social-icons {
-	display: none;
+  display: none;
 }
 
 .navbar-custom .navbar-toggler {
-	border: none;
-	color: #fff;
-	font-size: 2rem;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
 }
 
-.navbar-custom button[aria-expanded="false"] .navbar-toggler-awesome.fas.fa-times {
-	display: none;
+.navbar-custom
+  button[aria-expanded="false"]
+  .navbar-toggler-awesome.fas.fa-times {
+  display: none;
 }
 
-.navbar-custom button[aria-expanded="false"] .navbar-toggler-awesome.fas.fa-bars {
-	display: inline-block;
+.navbar-custom
+  button[aria-expanded="false"]
+  .navbar-toggler-awesome.fas.fa-bars {
+  display: inline-block;
 }
 
-.navbar-custom button[aria-expanded="true"] .navbar-toggler-awesome.fas.fa-bars {
-	display: none;
+.navbar-custom
+  button[aria-expanded="true"]
+  .navbar-toggler-awesome.fas.fa-bars {
+  display: none;
 }
 
-.navbar-custom button[aria-expanded="true"] .navbar-toggler-awesome.fas.fa-times {
-	display: inline-block;
-	margin-right: 0.125rem;
+.navbar-custom
+  button[aria-expanded="true"]
+  .navbar-toggler-awesome.fas.fa-times {
+  display: inline-block;
+  margin-right: 0.125rem;
 }
 
 /*********************/
 /*    04. Header     */
 /*********************/
 .header {
-	background-image: url("../images/flauta-transparent.webp"), url("../images/pandeiro-transparent.webp"),
-		url("../images/notas-transparent.webp"), url("../images/violao-transparent.webp");
-	background-position: left top, right top, left bottom, right bottom;
-	background-size: 28%;
-	background-repeat: no-repeat;
-	margin-top: 5.3rem;
+  background-image: url("../images/flauta-transparent.webp"),
+    url("../images/pandeiro-transparent.webp"),
+    url("../images/notas-transparent.webp"),
+    url("../images/violao-transparent.webp");
+  background-position: left top, right top, left bottom, right bottom;
+  background-size: 28%;
+  background-repeat: no-repeat;
+  margin-top: 5.3rem;
 }
 
 .header .header-content {
-	text-align: center;
-	height: calc(91vh - 5.3rem);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  text-align: center;
+  height: calc(91vh - 5.3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header h1 {
-	margin-bottom: 0.5rem;
-	color: #7c74c5;
-	font-size: 1.5rem;
-	line-height: 2.25rem;
-	height: 4.5rem;
+  margin-bottom: 0.5rem;
+  color: #7c74c5;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  height: 4.5rem;
 }
 
 .header .text-container p {
-	font: 500 1.125rem/1.625rem "Open Sans", sans-serif;
-	margin-bottom: 2rem;
-	color: #dc858a;
+  font: 500 1.125rem/1.625rem "Open Sans", sans-serif;
+  margin-bottom: 2rem;
+  color: #dc858a;
 }
 
 .header .btn-solid-lg {
-	margin-right: 0.5rem;
-	margin-bottom: 1.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1.25rem;
 }
 
 /*********************/
 /*     05. Music Therapy     */
 /*********************/
 .music-therapy {
-	padding-top: 6.5rem;
-	padding-bottom: 3rem;
+  padding-top: 6.5rem;
+  padding-bottom: 3rem;
 }
 
 .music-therapy .text-container {
-	margin-bottom: 3rem;
-	text-align: center;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .music-therapy h3 {
-	margin-bottom: 1.375rem;
-	font: 700 1.25rem/1.75rem "Architects Daughter", cursive;
+  margin-bottom: 1.375rem;
+  font: 700 1.25rem/1.75rem "Architects Daughter", cursive;
 }
-
 
 /***************************/
 /*     06. Description     */
 /***************************/
 .description {
-	padding-top: 3rem;
-	padding-bottom: 2.875rem;
+  padding-top: 3rem;
+  padding-bottom: 2.875rem;
 }
 
-.description h3.section-title {
-	font-size: 1.5rem;
-}
-.description h3 {
-	font: 700 1.375rem/1.75rem "Architects Daughter", cursive;
-	margin-top: 1rem;
+.description h2 {
+  font: 700 1.375rem/1.75rem "Architects Daughter", cursive;
+  margin-top: 1rem;
 }
 .description .card {
-	margin-bottom: 2.5rem;
-	border: none;
-	text-align: center;
+  margin-bottom: 2.5rem;
+  border: none;
+  text-align: center;
 }
 
 .description .fa-stack {
-	width: 6rem;
-	height: 6rem;
-	margin-right: auto;
-	margin-bottom: 1rem;
-	margin-left: auto;
-	line-height: 6rem;
-	text-align: left;
+  width: 6rem;
+  height: 6rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  line-height: 6rem;
+  text-align: left;
 }
 
 .description .fa-stack .hexagon {
-	position: absolute;
-	width: 6rem;
-	height: 6rem;
-	background: url("../images/hexagon-green.svg") center center no-repeat;
-	background-size: 6rem 6rem;
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background: url("../images/hexagon-green.svg") center center no-repeat;
+  background-size: 6rem 6rem;
 }
 
 .description .fa-stack-1x {
-	color: #fff;
-	font-size: 2rem;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .description .card-body {
-	padding: 0;
+  padding: 0;
 }
 
 .description .card-title {
-	margin-bottom: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 
 /************************/
 /*     07. Attendance     */
 /************************/
 .attendance {
-	padding-top: 6.625rem;
-	padding-bottom: 6.625rem;
-	background-color: #ffffff;
+  padding-top: 6.625rem;
+  padding-bottom: 6.625rem;
+  background-color: #ffffff;
 }
 
 .attendance h3 {
-	margin-bottom: 1rem;
-
+  margin-bottom: 1rem;
 }
 
 /*************************/
 /*     08. Activities     */
 /*************************/
 .activities {
-	margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .activities .text-container {
-	max-width: 88%;
-	text-align: center;
+  max-width: 88%;
+  text-align: center;
 }
 .atend-1 {
-	margin-bottom: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 
 /*************************/
 /*     09. Indicate     */
 /*************************/
 .indicate .text-container {
-	max-width: 88%;
-	text-align: center;
+  max-width: 88%;
+  text-align: center;
 }
 
 .indicate .list-unstyled {
-	margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .indicate .list-unstyled .fas {
-	color: #28af72;
-	font-size: 0.5rem;
-	line-height: 1.375rem;
-	margin-right: 0.44rem;
-	vertical-align: middle;
+  color: #28af72;
+  font-size: 0.5rem;
+  line-height: 1.375rem;
+  margin-right: 0.44rem;
+  vertical-align: middle;
 }
 
 .indicate .list-unstyled .media-body {
-	margin-left: 0.625rem;
+  margin-left: 0.625rem;
 }
 
 /********************/
@@ -445,309 +449,313 @@ strong {
 /********************/
 
 .benefits {
-	padding-top: 6.375rem;
-	padding-bottom: 6.375rem;
+  padding-top: 6.375rem;
+  padding-bottom: 6.375rem;
 }
 .benefits .fas {
-	color: #28af72;
-	font-size: 0.5rem;
-	line-height: 1.375rem;
-	margin-right: 0.44rem;
-	vertical-align: middle;
-	text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  color: #28af72;
+  font-size: 0.5rem;
+  line-height: 1.375rem;
+  margin-right: 0.44rem;
+  vertical-align: middle;
+  text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff,
+    1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
-.benefits .card{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	border-radius: 20px;
-	max-width: 540px;
+.benefits .p-heading {
+  font-weight: 500;
 }
-.benefits div.card > div:first-child{
-	padding: 0
+.benefits .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  max-width: 540px;
+}
+.benefits div.card > div:first-child {
+  padding: 0;
 }
 .benefits .card .card-body {
-	padding: 0;
+  padding: 0;
 }
 .benefits .card .card-body p {
-	margin-bottom: 0;
-	color: #fff;
-} 
+  margin-bottom: 0;
+  color: #fff;
+}
 .benefits .card-image {
-	padding: 0.25rem;
-	border-radius: 20px;
-	max-height: 240px;
+  padding: 0.25rem;
+  border-radius: 20px;
+  max-height: 240px;
 }
 .card1 {
-	background-color: #7c74c5;
+  background-color: #7c74c5;
 }
 .card2 {
-	background-color: #dc858a;	
+  background-color: #dc858a;
 }
 .card3 {
-	background-color: #e9ba6c;
+  background-color: #e9ba6c;
 }
 .card4 {
-	background-color: #28af72;
+  background-color: #28af72;
 }
 .card2 .fas,
 .card4 .fas {
-	color:#7c74c5;
+  color: #7c74c5;
 }
 .pad-7 {
-	padding-left: 7px;
-	padding-right: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 /*********************/
 /*     11. About     */
 /*********************/
 .about {
-	padding-top: 6.875rem;
-	padding-bottom: 6.125rem;
+  padding-top: 6.875rem;
+  padding-bottom: 6.125rem;
 }
-
 .about h1 {
-	font: 700 2.25rem/2.25rem "Architects Daughter", cursive;
+  line-height: 2rem;
 }
-.about h1 strong {
-	font: 700 1.75rem/1.75rem "Architects Daughter", cursive;
+.about strong {
+  font: 700 1.75rem/1.75rem "Architects Daughter", cursive;
 }
 
 .about .image-container {
-	margin-bottom: 3rem;
-	border-radius: 0.25rem;
+  margin-bottom: 3rem;
+  border-radius: 0.25rem;
 }
 
 .about .text-container {
-	text-align: center;
+  text-align: center;
 }
 
 .about .list-unstyled {
-	margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .about .list-unstyled .fas {
-	color: #28af72;
-	font-size: 0.5rem;
-	line-height: 1.375rem;
-	margin-right: 0.44rem;
-	vertical-align: middle;
+  color: #28af72;
+  font-size: 0.5rem;
+  line-height: 1.375rem;
+  margin-right: 0.44rem;
+  vertical-align: middle;
 }
 .about .list-unstyled img {
-	margin-left: 7px;
-	vertical-align: middle;
-	line-height: 1.375rem;
+  margin-left: 7px;
+  vertical-align: middle;
+  line-height: 1.375rem;
 }
 .about .list-unstyled .media-body {
-	margin-left: 0.625rem;
+  margin-left: 0.625rem;
 }
 
 /***********************/
 /*     12. Contact     */
 /***********************/
 .contact {
-	padding-top: 6.625rem;
-	padding-bottom: 5.625rem;
-	background-color: #ffffff;
+  padding-top: 6.625rem;
+  padding-bottom: 5.625rem;
+  background-color: #ffffff;
 }
 
 .contact .text-container {
-	text-align: center;
+  text-align: center;
 }
 .h2-small {
-	font: 500 1.125rem/1.5625rem "Open Sans", sans-serif;
+  font: 500 1.125rem/1.5625rem "Open Sans", sans-serif;
 }
 .contact h3 {
-	margin-bottom: 1rem;
-	margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 .contact .list-unstyled {
-	margin-bottom: 2.25rem;
-	font-size: 1rem;
-	line-height: 1.625rem;
+  margin-bottom: 2.25rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
 }
 
 .contact .list-unstyled .fas,
 .contact .list-unstyled .fab {
-	margin-right: 0.44rem;
-	font-size: 0.875rem;
-	color: #28af72;
+  margin-right: 0.44rem;
+  font-size: 0.875rem;
+  color: #28af72;
 }
 
 .contact .list-unstyled .fa-phone {
-	vertical-align: 3%;
+  vertical-align: 3%;
 }
 
 .contact li {
-	font-weight: bolder;
-	display: block;
-	padding: 0.3rem 0;
+  font-weight: bolder;
+  display: block;
+  padding: 0.3rem 0;
 }
 
 .contact .fa-stack {
-	margin-right: 0.25rem;
-	margin-bottom: 0.75rem;
-	margin-left: 0.125rem;
-	width: 3.25rem;
-	height: 3.25rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.75rem;
+  margin-left: 0.125rem;
+  width: 3.25rem;
+  height: 3.25rem;
 }
 
 .contact .fa-stack .hexagon {
-	position: absolute;
-	width: 3.25rem;
-	height: 3.25rem;
-	background: url("../images/hexagon-green.svg") center center no-repeat;
-	background-size: 3.25rem 3.25rem;
-	transition: all 0.2s ease;
+  position: absolute;
+  width: 3.25rem;
+  height: 3.25rem;
+  background: url("../images/hexagon-green.svg") center center no-repeat;
+  background-size: 3.25rem 3.25rem;
+  transition: all 0.2s ease;
 }
 
 .contact .fa-stack:hover .hexagon {
-	background: url("../images/hexagon-white.svg") center center no-repeat;
-	background-size: 3.25rem 3.25rem;
+  background: url("../images/hexagon-white.svg") center center no-repeat;
+  background-size: 3.25rem 3.25rem;
 }
 
 .contact .fa-stack-1x {
-	font-size: 1.5rem;
-	line-height: 3.25rem;
-	color: #fff;
-	transition: all 0.2s ease;
+  font-size: 1.5rem;
+  line-height: 3.25rem;
+  color: #fff;
+  transition: all 0.2s ease;
 }
 
 .contact .fa-stack:hover .fa-stack-1x {
-	color: #28af72;
+  color: #28af72;
 }
 .whats-btn {
-	position: absolute;
-	animation: pulse 1s infinite;
-	animation-timing-function: linear;
-	margin-left: 8px;
+  position: absolute;
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+  margin-left: 8px;
 }
 
 .whats-btn:hover {
-	transform: scale(1.1);
-	transition: all ease 500ms;
+  transform: scale(1.1);
+  transition: all ease 500ms;
 }
 @keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(1.1);
-	}
-	100% {
-		transform: scale(1);
-	}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .flex-social {
-	display: flex;
-	justify-content: center;
-	text-align: left;
-	column-gap: 4rem;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  column-gap: 4rem;
 }
 
 .flex-idea {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-idea .image-container {
-	flex: 0 0 15rem;
+  flex: 0 0 15rem;
 }
 
 .flex-idea .image-container img {
-	border-radius: 50%;
-	box-shadow: inset 0 0 1.5em #7c74c5, 0 0 0.2em #1a1447;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1.5em #7c74c5, 0 0 0.2em #1a1447;
 }
 
 .flex-idea .text-container {
-	flex: 0 0 20rem;
-	margin-top: 0.5rem;
+  flex: 0 0 20rem;
+  margin-top: 0.5rem;
 }
 
 .flex-idea .text-container p {
-	font-style: italic;
-	line-height: 2rem;
+  font-style: italic;
+  line-height: 2rem;
 }
 
 /**********************/
 /*     13. Footer     */
 /**********************/
 .footer {
-	padding-top: 1rem;
-	background-color: #1a1447;
+  padding-top: 1rem;
+  background-color: #1a1447;
 }
 
 .logo-image-footer {
-	height: 8rem;
-	display: block;
-	margin: 0 auto 1rem;
+  height: 8rem;
+  display: block;
+  margin: 0 auto 1rem;
 }
 
 .footer h4 {
-	margin-bottom: 0.75rem;
-	color: #fff;
-	text-align: center;
+  margin-bottom: 0.75rem;
+  color: #fff;
+  text-align: center;
 }
 
 .footer p,
 .footer ul {
-	font-size: 0.875rem;
-	line-height: 1.375rem;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
 }
 
 .footer li {
-	min-width: min-content;
-	max-width: 100vw;
-	text-align: center;
+  min-width: min-content;
+  max-width: 100vw;
+  text-align: center;
 }
 
 .footer-flex {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /*************************/
 /*     14. Copyright     */
 /*************************/
 .copyright {
-	padding-bottom: 0.5rem;
-	background-color: #1a1447;
-	text-align: center;
+  padding-bottom: 0.5rem;
+  background-color: #1a1447;
+  text-align: center;
 }
 
 .copyright p,
 .copyright a {
-	font: 500 0.875rem/1.375rem "Open Sans", sans-serif;
-	color: #bbbbbb;
-	text-decoration: none;
+  font: 500 0.875rem/1.375rem "Open Sans", sans-serif;
+  color: #bbbbbb;
+  text-decoration: none;
 }
 
 /**********************************/
 /*     15. Back To Top Button     */
 /**********************************/
 a.back-to-top {
-	position: fixed;
-	z-index: 999;
-	right: 0.75rem;
-	bottom: 0.75rem;
-	display: none;
-	width: 2.625rem;
-	height: 2.625rem;
-	border-radius: 1.875rem;
-	background: #28af72 url("../images/up-arrow.png") no-repeat center 47%;
-	background-size: 1.125rem 1.125rem;
-	text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  display: none;
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 1.875rem;
+  background: #28af72 url("../images/up-arrow.png") no-repeat center 47%;
+  background-size: 1.125rem 1.125rem;
+  text-indent: -9999px;
 }
 
 a:hover.back-to-top {
-	background: transparent url("../images/up-arrow-green.png") no-repeat center 47%;
-	border: 0.125rem solid #28af72;
+  background: transparent url("../images/up-arrow-green.png") no-repeat center
+    47%;
+  border: 0.125rem solid #28af72;
 }
 
 /*****************************/
@@ -756,294 +764,293 @@ a:hover.back-to-top {
 
 /* Min-width width 424px */
 @media (min-width: 424px) {
-	/* General Styles */
-	.header h1 {
-		font: 700 2.25rem/2.75rem "Architects Daughter", cursive;
-		height: 8rem;
-	}
-	/* end of general styles */
+  /* General Styles */
+  .header h1 {
+    font: 700 2.25rem/2.75rem "Architects Daughter", cursive;
+    height: 8rem;
+  }
+  /* end of general styles */
 }
 
 /* Min-width width 453px */
 @media (min-width: 453px) {
-	/* General Styles */
-	.header h1 {
-		height: 6rem;
-	}
-	/* end of general styles */
+  /* General Styles */
+  .header h1 {
+    height: 6rem;
+  }
+  /* end of general styles */
 }
 
 /* Min-width width 768px */
 @media (min-width: 768px) {
-	/* General Styles */
-	.p-heading {
-		width: 85%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of general styles */
+  /* General Styles */
+  .p-heading {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* end of general styles */
 
-	/* Navigation */
-	.navbar-custom {
-		box-shadow: none;
-		background: transparent;
-		justify-content: center;
-		padding-right: 18rem;
-		padding-left: 21rem;
-	}
+  /* Navigation */
+  .navbar-custom {
+    box-shadow: none;
+    background: transparent;
+    justify-content: center;
+    padding-right: 18rem;
+    padding-left: 21rem;
+  }
 
-	.navbar-custom.top-nav-collapse {
-		padding-right: 18rem;
-		padding-left: 21rem;
-		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-		background-color: #1a1447;
-	}
-	.navbar-custom .navbar-brand.logo-image img {
-		margin-left: -2.5rem;
-	}
+  .navbar-custom.top-nav-collapse {
+    padding-right: 18rem;
+    padding-left: 21rem;
+    box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+    background-color: #1a1447;
+  }
+  .navbar-custom .navbar-brand.logo-image img {
+    margin-left: -2.5rem;
+  }
 
-	.navbar-custom .social-icons {
-		display: flex;
-		margin-left: 0.5rem;
-		margin-right: 0.5rem;
-	}
-	.navbar-custom .fa-stack {
-		margin-left: 0.375rem;
-		font-size: 0.8125rem;
-	}
+  .navbar-custom .social-icons {
+    display: flex;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .navbar-custom .fa-stack {
+    margin-left: 0.375rem;
+    font-size: 0.8125rem;
+  }
 
-	.navbar-custom .fa-stack .hexagon {
-		width: 1.625rem;
-		height: 1.625rem;
-		position: absolute;
-		background: url("../images/hexagon-green.svg") center center no-repeat;
-		background-size: 1.625rem 1.625rem;
-		transition: all 0.2s ease;
-	}
+  .navbar-custom .fa-stack .hexagon {
+    width: 1.625rem;
+    height: 1.625rem;
+    position: absolute;
+    background: url("../images/hexagon-green.svg") center center no-repeat;
+    background-size: 1.625rem 1.625rem;
+    transition: all 0.2s ease;
+  }
 
-	.navbar-custom .fa-stack:hover .hexagon {
-		background: url("../images/hexagon-white.svg") center center no-repeat;
-		background-size: 1.625rem 1.625rem;
-	}
+  .navbar-custom .fa-stack:hover .hexagon {
+    background: url("../images/hexagon-white.svg") center center no-repeat;
+    background-size: 1.625rem 1.625rem;
+  }
 
-	.navbar-custom .fa-stack-1x {
-		font-size: 0.6875rem;
-		line-height: 1.625rem;
-		color: #fff;
-		transition: all 0.2s ease;
-	}
+  .navbar-custom .fa-stack-1x {
+    font-size: 0.6875rem;
+    line-height: 1.625rem;
+    color: #fff;
+    transition: all 0.2s ease;
+  }
 
-	.navbar-custom .fa-stack:hover .fa-stack-1x {
-		color: #28af72;
-	}
+  .navbar-custom .fa-stack:hover .fa-stack-1x {
+    color: #28af72;
+  }
 
-	.navbar-custom .navbar-nav {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
+  .navbar-custom .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-	.navbar-custom .nav-item .nav-link {
-		padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-		color: #7c74c5;
-		letter-spacing: 0.1rem;
-	}
+  .navbar-custom .nav-item .nav-link {
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    color: #7c74c5;
+    letter-spacing: 0.1rem;
+  }
 
-	.navbar-custom .nav-item .nav-link:hover,
-	.navbar-custom .nav-item .nav-link.active {
-		color: #28af72;
-	}
+  .navbar-custom .nav-item .nav-link:hover,
+  .navbar-custom .nav-item .nav-link.active {
+    color: #28af72;
+  }
 
-	.navbar-custom.top-nav-collapse .nav-item .nav-link {
-		color: #fff;
-	}
+  .navbar-custom.top-nav-collapse .nav-item .nav-link {
+    color: #fff;
+  }
 
-	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
-	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-		color: #28af72;
-	}
-	/* end of navigation */
+  .navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
+  .navbar-custom.top-nav-collapse .nav-item .nav-link.active {
+    color: #28af72;
+  }
+  /* end of navigation */
 
-	/* Header */
-	.header .header-content {
-		height: 100vh;
-	}
+  /* Header */
+  .header .header-content {
+    height: 100vh;
+  }
 
-	.header {
-		margin-top: 0;
-	}
-	/* end of header */
+  .header {
+    margin-top: 0;
+  }
+  /* end of header */
 
-	/* Benefits */
-	.benefits .card {
-		min-height: 180px;
-	}
+  /* Benefits */
+  .benefits .card {
+    min-height: 180px;
+  }
 
-	/* end of Benefits */
+  /* end of Benefits */
 
-	/* Contact */
-	.contact .list-unstyled li {
-		display: block;
-		margin-right: 1rem;
-	}
+  /* Contact */
+  .contact .list-unstyled li {
+    display: block;
+    margin-right: 1rem;
+  }
 
-	.flex-idea .text-container {
-		margin-top: 0;
-		margin-left: 1rem;
-	}
-	/* end of contact */
+  .flex-idea .text-container {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+  /* end of contact */
 }
 /* end of min-width width 768px */
 
 /* Min-width width 992px */
 @media (min-width: 992px) {
-	/* General Styles */
-	.p-heading {
-		width: 65%;
-	}
-	/* end of general styles */
+  /* General Styles */
+  .p-heading {
+    width: 65%;
+  }
+  /* end of general styles */
 
-	/* Navigation */
-	.navbar-custom .navbar-brand.logo-image img {
-		margin-left: -3rem;
-	}
-	/* end of navigation */
+  /* Navigation */
+  .navbar-custom .navbar-brand.logo-image img {
+    margin-left: -3rem;
+  }
+  /* end of navigation */
 
-	/* Header */
-	.header h1 {
-		height: 3.5rem;
-	}
-	.header .text-container {
-		margin-top: 6.5rem;
-	}
-	/* end of header */
+  /* Header */
+  .header h1 {
+    height: 3.5rem;
+  }
+  .header .text-container {
+    margin-top: 6.5rem;
+  }
+  /* end of header */
 
-	/* Music Therapy */
-	.music-therapy {
-		padding-top: 6.875rem;
-	}
+  /* Music Therapy */
+  .music-therapy {
+    padding-top: 6.875rem;
+  }
 
-	.music-therapy .text-container {
-		margin-bottom: 0;
-	}
-	#music-therapy .image-container img {
-		max-height: 520px;
-	}
-	/* end of Music Therapy */
+  .music-therapy .text-container {
+    margin-bottom: 0;
+  }
+  #music-therapy .image-container img {
+    max-height: 520px;
+  }
+  /* end of Music Therapy */
 
-	/* Description */
-	.description .card {
-		display: inline-block;
-		max-width: 17.5rem;
-		text-align: center;
-		vertical-align: top;
-	}
+  /* Description */
+  .description .card {
+    display: inline-block;
+    max-width: 17.5rem;
+    text-align: center;
+    vertical-align: top;
+  }
 
-	.card-flex {
-		display: flex;
-		justify-content: space-evenly;
-	}
-	/* end of description */
+  .card-flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* end of description */
 
-	/* Activities */
-	.activities {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+  /* Activities */
+  .activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* end of Activities */
 
-	}
-	/* end of Activities */
+  /* Indicate */
+  .indicate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* end of Indicate */
 
-	/* Indicate */
-	.indicate {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	/* end of Indicate */
+  /* About */
+  .about .image-container {
+    margin-bottom: 0;
+  }
+  /* end of About */
+  .benefits .card {
+    min-height: 0;
+  }
 
-	/* About */
-	.about .image-container {
-		margin-bottom: 0;
-	}
-	/* end of About */
-	.benefits .card {
-		min-height: 0;
-	}
+  /* Contact */
+  .contact {
+    padding-top: 6.875rem;
+  }
 
-	/* Contact */
-	.contact {
-		padding-top: 6.875rem;
-	}
-
-	.flex-idea {
-		flex-wrap: nowrap;
-	}
-	.flex-idea .text-container {
-		max-width: 15rem;
-		margin-left: 0;
-	}
-	/* end of contact */
+  .flex-idea {
+    flex-wrap: nowrap;
+  }
+  .flex-idea .text-container {
+    max-width: 15rem;
+    margin-left: 0;
+  }
+  /* end of contact */
 }
 /* end of min-width width 992px */
 
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
-	/* General Styles */
-	.p-heading {
-		width: 55%;
-	}
-	/* end of general styles */
+  /* General Styles */
+  .p-heading {
+    width: 55%;
+  }
+  /* end of general styles */
 
-	/* Music Therapy */
-	.music-therapy .text-container {
-		margin-top: 0.875rem;
-		margin-right: 3rem;
-	}
-	/* end of Music Therapy */
+  /* Music Therapy */
+  .music-therapy .text-container {
+    margin-top: 0.875rem;
+    margin-right: 3rem;
+  }
+  /* end of Music Therapy */
 
-	/* Description */
-	.description .card {
-		max-width: 21rem;
-		text-align: center;
-	}
+  /* Description */
+  .description .card {
+    max-width: 21rem;
+    text-align: center;
+  }
 
-	/* end of description */
+  /* end of description */
 
-	/* About */
-	.about .image-container {
-		margin-right: 1.5rem;
-	}
+  /* About */
+  .about .image-container {
+    margin-right: 1.5rem;
+  }
 
-	.about .text-container {
-		margin-top: 0.375rem;
-		margin-right: 2.5rem;
-		width: 34rem;
-		text-align: center;
-		margin-left: -1rem;
-	}
-	/* end of About */
+  .about .text-container {
+    margin-top: 0.375rem;
+    margin-right: 2.5rem;
+    width: 34rem;
+    text-align: center;
+    margin-left: -1rem;
+  }
+  /* end of About */
 
-	/* Contact */
-	.contact .text-container {
-		margin-right: 1.5rem;
-	}
+  /* Contact */
+  .contact .text-container {
+    margin-right: 1.5rem;
+  }
 
-	.flex-idea .text-container {
-		max-width: 20rem;
-		margin-left: 0.5rem;
-	}
-	/* end of contact */
+  .flex-idea .text-container {
+    max-width: 20rem;
+    margin-left: 0.5rem;
+  }
+  /* end of contact */
 }
 /* end of min-width width 1200px */
 
 /* Max-height 310px and Min-width width 768px */
 @media (max-height: 310px) and (min-width: 768px) {
-	/* Header */
-	.header .header-content {
-		justify-content: flex-end;
-	}
-	.navbar {
-		background-color: inherit;
-	}
-	/* end of Header */
+  /* Header */
+  .header .header-content {
+    justify-content: flex-end;
+  }
+  .navbar {
+    background-color: inherit;
+  }
+  /* end of Header */
 }

@@ -550,7 +550,18 @@ strong {
 .about .list-unstyled .media-body {
   margin-left: 0.625rem;
 }
-
+.about .fa-caret-square-down {
+  color: #7c74c5;
+  font-size: 0.8rem;
+  line-height: 1.375rem;
+  margin: 0 0.44rem;
+  vertical-align: middle;
+}
+.about .working-with {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /***********************/
 /*     12. Contact     */
 /***********************/
@@ -626,10 +637,10 @@ strong {
   color: #28af72;
 }
 .whats-btn {
-  position: absolute;
   animation: pulse 1s infinite;
   animation-timing-function: linear;
-  margin-left: 8px;
+  margin-left: 2px;
+  height: 40px;
 }
 
 .whats-btn:hover {

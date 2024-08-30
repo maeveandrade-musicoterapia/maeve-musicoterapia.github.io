@@ -228,6 +228,7 @@ strong {
 .navbar-custom .navbar-brand.logo-image img {
   width: 4rem;
   height: 4rem;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
@@ -258,27 +259,19 @@ strong {
   font-size: 2rem;
 }
 
-.navbar-custom
-  button[aria-expanded="false"]
-  .navbar-toggler-awesome.fas.fa-times {
+.navbar-custom button[aria-expanded="false"] .navbar-toggler-awesome.fas.fa-times {
   display: none;
 }
 
-.navbar-custom
-  button[aria-expanded="false"]
-  .navbar-toggler-awesome.fas.fa-bars {
+.navbar-custom button[aria-expanded="false"] .navbar-toggler-awesome.fas.fa-bars {
   display: inline-block;
 }
 
-.navbar-custom
-  button[aria-expanded="true"]
-  .navbar-toggler-awesome.fas.fa-bars {
+.navbar-custom button[aria-expanded="true"] .navbar-toggler-awesome.fas.fa-bars {
   display: none;
 }
 
-.navbar-custom
-  button[aria-expanded="true"]
-  .navbar-toggler-awesome.fas.fa-times {
+.navbar-custom button[aria-expanded="true"] .navbar-toggler-awesome.fas.fa-times {
   display: inline-block;
   margin-right: 0.125rem;
 }
@@ -287,10 +280,8 @@ strong {
 /*    04. Header     */
 /*********************/
 .header {
-  background-image: url("../images/flauta-transparent.webp"),
-    url("../images/pandeiro-transparent.webp"),
-    url("../images/notas-transparent.webp"),
-    url("../images/violao-transparent.webp");
+  background-image: url("../images/flauta-transparent.webp"), url("../images/pandeiro-transparent.webp"),
+    url("../images/notas-transparent.webp"), url("../images/violao-transparent.webp");
   background-position: left top, right top, left bottom, right bottom;
   background-size: 28%;
   background-repeat: no-repeat;
@@ -347,8 +338,8 @@ strong {
 /*     06. Description     */
 /***************************/
 .description {
-  padding-top: 3rem;
-  padding-bottom: 2.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .description h2 {
@@ -397,7 +388,7 @@ strong {
 /************************/
 .attendance {
   padding-top: 6.625rem;
-  padding-bottom: 6.625rem;
+  padding-bottom: 3rem;
   background-color: #ffffff;
 }
 
@@ -444,6 +435,29 @@ strong {
   margin-left: 0.625rem;
 }
 
+.atend-image-container {
+  position: relative;
+  display: inline-block;
+}
+.atend-image-container img {
+  max-height: 300px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 2px 3px 5px #222222;
+}
+
+.atend-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #28af72; /* Cor verde claro */
+  transform: rotate(10deg);
+  z-index: 1;
+}
+
 /********************/
 /*     10. Benefits     */
 /********************/
@@ -458,8 +472,8 @@ strong {
   line-height: 1.375rem;
   margin-right: 0.44rem;
   vertical-align: middle;
-  text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff,
-    1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+    -1px 1px 0 #fff;
 }
 .benefits .p-heading {
   font-weight: 500;
@@ -764,8 +778,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-  background: transparent url("../images/up-arrow-green.png") no-repeat center
-    47%;
+  background: transparent url("../images/up-arrow-green.png") no-repeat center 47%;
   border: 0.125rem solid #28af72;
 }
 
@@ -892,6 +905,19 @@ a:hover.back-to-top {
   }
   /* end of header */
 
+  /* Attendance */
+  .indicate .row {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+  }
+
+  .indicate .text-container {
+    width: 50%;
+  }
+  /* end of Attendance */
+
+  /* end of Music Therapy */
+
   /* Benefits */
   .benefits .card {
     min-height: 180px;
@@ -976,6 +1002,10 @@ a:hover.back-to-top {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .indicate .text-container {
+    width: 50%;
   }
   /* end of Indicate */
 

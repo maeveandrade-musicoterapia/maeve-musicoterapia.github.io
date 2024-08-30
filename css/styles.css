@@ -339,7 +339,7 @@ strong {
 /***************************/
 .description {
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
 }
 
 .description h2 {

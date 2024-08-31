@@ -50,6 +50,7 @@ p {
 
 .p-heading {
   margin-bottom: 3.5rem;
+  margin-top: 2.5rem;
   text-align: center;
   font-weight: 600;
 }
@@ -338,7 +339,7 @@ strong {
 /*     06. Description     */
 /***************************/
 .description {
-  padding-top: 1rem;
+  padding-top: 3rem;
   /* padding-bottom: 1rem; */
 }
 
@@ -388,7 +389,7 @@ strong {
 /************************/
 .attendance {
   padding-top: 6.625rem;
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
   background-color: #ffffff;
 }
 
@@ -812,6 +813,7 @@ a:hover.back-to-top {
     width: 85%;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 0;
   }
   /* end of general styles */
 
